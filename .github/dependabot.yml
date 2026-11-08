@@ -1,0 +1,14 @@
+# Dependabot : propose automatiquement la mise à jour des actions GitHub
+# utilisées dans .github/workflows/ (checkout, upload/deploy-pages, quarto…).
+# Une fois par mois, au plus une pull request regroupant toutes les mises à jour.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "ci"
