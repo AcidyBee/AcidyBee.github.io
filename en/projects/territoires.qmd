@@ -1,0 +1,66 @@
+---
+title: "Tender demonstrators: open data and accessibility"
+pagetitle: "Tender demonstrators: open data and accessibility · Alexis Bourgeois"
+description: Socio-demographic diagnostics and address-level routing, built on open data.
+image: ../../assets/img/osrm-groups.jpg
+order: 6
+featured: false
+domain: territory
+domain-label: Territories & environment
+period: 2016 →
+setting: Environnons, tender responses
+role: "Data scientist: data, computation, maps"
+key: address-level
+key-sub: road distances, not straight lines
+tools:
+  - R
+  - sf
+  - targets
+  - OSRM
+  - Python / geopandas
+  - données ouvertes
+code:
+  label: pav-grenoble-hexbin (R · Python)
+  url: https://github.com/AcidyBee/pav-grenoble-hexbin
+---
+
+## Context
+
+To win a tender, nothing beats a demonstration on the client's own territory, delivered within days.
+
+## Question
+
+What does open data reveal about the Pic-Saint-Loup and Étang de l'Or area? How far, really, are residents from their nearest recycling centre (Grenoble-Alpes Métropole)?
+
+## Data
+
+INSEE (housing census, FILOSOFI income, tract boundaries), BAN (addresses), OSM (road network), metropolitan open data (recycling centres, 1,973 drop-off containers).
+
+## Method
+
+- Aggregation at tract and municipal level, choropleth maps
+- Local OSRM server to compute routes and travel times automatically
+- Assigning each address to the nearest recycling centre by road
+- Drop-off points: quality checks (inconsistent codes, free-text dates), Lambert-93 projection, 1 km hexbin, in R (targets, sf) and Python (geopandas)
+
+## Results
+
+A strong contrast between primary-residence areas and coastal second-home areas, with intermediate hubs (Mauguio, Lunel, Sommières). A map of actual road distances at address level for the Grenoble metropolitan area. The drop-off hexbin reveals two collection schemes: the Grand-Sud sector (Vizille, Jarrie…) separates packaging and paper, while the rest of the area relies mostly on mixed recycling. A caveat: depending on how the grid is anchored, the maximum per hexagon ranges from 86 to 133 containers (the modifiable areal unit problem). The grid is therefore anchored on whole kilometres, and interpretation focuses on overall patterns rather than any single cell.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Addresses assigned to the nearest recycling centre](../../assets/img/osrm-groups.jpg){.lightbox group="territoires"}
+
+![Road distance to the nearest recycling centre](../../assets/img/osrm-dist.jpg){.lightbox group="territoires"}
+
+![Drop-off points by waste stream (1 km hexagons)](../../assets/img/pav-hexbin.jpg){.lightbox group="territoires"}
+
+![Household size and income by tract](../../assets/img/pic-pop.jpg){.lightbox group="territoires"}
+
+![Share of detached houses by tract](../../assets/img/pic-maisons.jpg){.lightbox group="territoires"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

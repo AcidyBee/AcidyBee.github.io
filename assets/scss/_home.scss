@@ -1,0 +1,73 @@
+// ---- Accueil ---------------------------------------------------------
+.hero { display: grid; grid-template-columns: 1.08fr .92fr; gap: 44px; align-items: center; padding-block: 36px 8px;
+  > * { min-width: 0; }
+  .copy { display: grid; gap: 22px; > p, > section > p { margin: 0; } > section { display: contents; } }
+  h1 { font-size: clamp(2.2rem, 5.2vw, 3.7rem); margin: 0; }
+  h1 em { font-style: normal; background: linear-gradient(transparent 62%, var(--honey-soft) 62%); }
+}
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 36px; } }
+
+// Carte hexbin (le contenu est construit par assets/js/hexbin.js)
+.hexcard { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: $r; box-shadow: var(--shadow); padding: 16px; display: grid; gap: 12px; }
+.hexhead { display: flex; justify-content: space-between; align-items: baseline; gap: 6px 12px; flex-wrap: wrap; .eyebrow { font-size: .72rem; } }
+.hexcode { font: 500 .8rem $mono; white-space: nowrap; }
+.hexbody { display: grid; grid-template-columns: minmax(0, 1fr) 176px; gap: 16px; align-items: start; }
+.hexplot { position: relative; min-width: 0;
+  canvas { display: block; width: 100%; aspect-ratio: .6; max-height: 520px; max-width: 100%; touch-action: pan-y; }
+}
+.hexside { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.hexchips { display: grid; gap: 6px; }
+.hchip { display: flex; justify-content: space-between; gap: 8px; align-items: center; font: 500 .84rem "IBM Plex Sans", sans-serif; text-align: left;
+  border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 7px 10px; cursor: pointer;
+  &:hover { border-color: var(--honey); }
+  b { font: 500 .76rem $mono; color: var(--muted); font-variant-numeric: tabular-nums; }
+  &[aria-pressed="true"] { border-color: var(--honey); background: var(--honey-soft); b { color: var(--honey-ink); } }
+}
+.hexleg { display: grid; gap: 5px; font: 500 .72rem $mono; color: var(--muted);
+  .bar { height: 10px; border-radius: 999px; background: linear-gradient(90deg, var(--hex-lo), var(--hex-hi)); }
+  .ends { display: flex; justify-content: space-between; font-variant-numeric: tabular-nums; }
+}
+.hexsum { font: 500 .76rem $mono; color: var(--muted); margin: 0; }
+.hexcard figcaption { display: flex; justify-content: space-between; gap: 6px 12px; flex-wrap: wrap; font-family: $mono; font-size: .72rem; color: var(--muted); padding-top: 10px; border-top: 1px dashed var(--line); }
+.hextip { position: absolute; pointer-events: none; background: var(--ink); color: var(--surface); font: 500 .75rem $mono; padding: 4px 8px; border-radius: 6px; transform: translate(-50%, -130%); white-space: nowrap; z-index: 2; }
+@media (max-width: 560px) {
+  .hexbody { grid-template-columns: 1fr; }
+  .hexchips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hexplot canvas { aspect-ratio: .62; max-height: 64vh; }
+}
+
+// Chiffres clés : chaque .stat contient **nombre** + texte
+.stats { display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid var(--line); border-radius: $r; background: var(--surface); overflow: hidden; }
+.stat { padding: 20px 18px; border-right: 1px solid var(--line);
+  &:last-child { border-right: 0; }
+  p { margin: 0; font-size: .88rem; color: var(--muted); line-height: 1.35; }
+  strong { display: block; font-family: $display; font-size: 2.1rem; line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; margin-bottom: 6px; font-weight: 800; }
+}
+@media (max-width: 860px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-bottom: 1px solid var(--line); &:nth-child(2n) { border-right: 0; } &:last-child { grid-column: 1 / -1; border-bottom: 0; } }
+}
+
+// Trois publics
+.aud { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.aud-item { background: var(--surface); border: 1px solid var(--line); border-radius: $r; padding: 22px; display: grid; gap: 10px; align-content: start;
+  &::before { content: ""; width: 40px; height: 44px; background: var(--hexico) center / contain no-repeat; }
+  h3 { margin: 0; }
+  p { margin: 0; color: var(--muted); }
+  ul { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: .95rem; display: grid; gap: 4px; }
+}
+@media (max-width: 860px) { .aud { grid-template-columns: 1fr; } }
+
+// Bandeau « parcours atypique »
+.band { background: var(--band-bg); color: var(--band-fg); border-radius: calc(#{$r} + 4px); padding: 36px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center;
+  .band-text { display: grid; gap: 14px; > p, section > p { margin: 0; } }
+  h2 { color: var(--band-fg); margin: 0; }
+  p { color: var(--band-muted); }
+  .eyebrow { color: var(--honey); }
+  .btn { border-color: var(--band-fg); color: var(--band-fg); &:hover { background: color-mix(in srgb, var(--band-fg) 14%, transparent); color: var(--band-fg); } }
+  ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; counter-reset: atyp; }
+  li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; color: var(--band-muted); counter-increment: atyp;
+    &::before { content: counter(atyp); font-family: $mono; font-size: .8rem; font-weight: 700; background: var(--honey); color: var(--on-honey); border-radius: 6px; padding: 2px 7px; margin-top: 3px; }
+  }
+}
+@media (max-width: 860px) { .band { grid-template-columns: 1fr; padding: 26px 20px; } }

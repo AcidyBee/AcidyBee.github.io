@@ -1,0 +1,152 @@
+---
+pagetitle: "Alexis Bourgeois · AcidyBee"
+description: "For 15 years I have been cleaning, modelling and mapping complex data for research, healthcare and public policy, from reproducible data preparation to published models and interactive apps."
+page-layout: full
+listing:
+  id: featured
+  contents: projects/*.qmd
+  include:
+    featured: true
+  sort: order
+  template: ../_partials/project-card.ejs
+  template-params:
+    more: "Read the case study →"
+---
+
+<!-- ============ Accroche + hexbin ============ -->
+::: {.hero}
+::: {.copy}
+[Senior data scientist · biostatistician · Montpellier, France]{.eyebrow}
+
+# *Reliable* data for informed decisions
+
+[For 15 years I have been cleaning, modelling and mapping complex data for research, healthcare and public policy, from reproducible data preparation to published models and interactive apps.]{.lead}
+
+::: {.tags}
+[R / Shiny]{.tag} [SQL / PostGIS]{.tag} [Git / GitHub]{.tag} [targets · Quarto]{.tag} [QGIS · Leaflet · sf · terra]{.tag}
+:::
+
+::: {.btns}
+[See the case studies](projects.qmd){.btn .btn-honey}
+[GitHub](https://github.com/AcidyBee){.btn}
+[ORCID](https://orcid.org/0009-0009-8513-1715){.btn}
+:::
+:::
+
+```{=html}
+<figure class="hexcard" data-hexbin data-src="/data/pav_web.json" data-lang="en">
+  <div class="hexhead">
+    <span class="eyebrow">Recycling drop-off points · Grenoble-Alpes Métropole</span>
+    <a class="hexcode" href="https://github.com/AcidyBee/pav-grenoble-hexbin">R / Python code ↗</a>
+  </div>
+  <div class="hexbody">
+    <div class="hexplot"><canvas data-hex="canvas" role="img"></canvas><div class="hextip" data-hex="tip" hidden></div></div>
+    <div class="hexside">
+      <div class="hexchips" data-hex="chips" role="group"></div>
+      <div class="hexleg"><span>Containers per hexagon</span><div class="bar"></div><div class="ends"><span>1</span><span data-hex="max"></span></div></div>
+      <p class="hexsum" data-hex="sum"></p>
+    </div>
+  </div>
+  <figcaption><span>1 km hexagons · Lambert-93 · Grenoble-Alpes Métropole open data</span><a href="projects/territoires.html">See the routing demonstrator →</a></figcaption>
+</figure>
+<script src="/assets/js/hexbin.js" defer></script>
+```
+:::
+
+<!-- ============ Chiffres clés ============ -->
+::: {.block}
+::: {.stats}
+::: {.stat}
+**15** years of data analysis
+:::
+::: {.stat}
+**23** publications, including 17 peer-reviewed articles
+:::
+::: {.stat}
+**≈ 30** R packages built, including 5 data packages
+:::
+::: {.stat}
+**9** theses supported at the hospital
+:::
+::: {.stat}
+**1st** prize, Ministry data hackathon (2016)
+:::
+:::
+:::
+
+<!-- ============ Trois publics ============ -->
+::: {.block}
+::: {.sec-head}
+[Who I work with]{.eyebrow}
+
+## One foundation, three ways to work together
+:::
+
+::: {.aud}
+::: {.aud-item}
+### Recruiters and research teams
+
+A biostatistician who supports researchers from question to paper.
+
+- Choosing and critiquing methods
+- Methods sections, publication-ready figures
+- FAIR data, version-controlled code
+:::
+::: {.aud-item}
+### Public bodies and consultancies
+
+A technical partner for tenders and territorial diagnostics.
+
+- Open data (INSEE, BAN, OSM)
+- Mapping at census-tract and municipal level
+- Demonstrators delivered quickly
+:::
+::: {.aud-item}
+### Colleagues and students
+
+Training and tools to become self-sufficient.
+
+- Workshops on R, Git, reproducible pipelines
+- Documented packages and apps
+- Explaining results in plain terms
+:::
+:::
+:::
+
+<!-- ============ Études à la une (listing « featured ») ============ -->
+::: {.block}
+::: {.sec-head .sec-head-row}
+::: {.sec-title}
+[Featured case studies]{.eyebrow}
+
+## From question to decision
+:::
+
+[All 8 case studies](projects.qmd){.btn}
+:::
+
+::: {#featured}
+:::
+:::
+
+<!-- ============ Parcours atypique ============ -->
+::: {.block}
+::: {.band}
+::: {.band-text}
+[An unusual path]{.eyebrow}
+
+## Physicist by training, statistician by practice
+
+I don't hold a statistics degree. I hold a PhD in physics, where measurement, uncertainty and modelling are daily work, followed by fifteen years of practice reviewed by peers: journals, a hackathon jury, hospital research teams.
+
+::: {.btns}
+[Read my story](about.qmd){.btn}
+:::
+:::
+
+1. PhD in physics (highest honours): measurement, uncertainty and inverse modelling
+2. Continuous training in statistics since 2012 (Stanford, Duke, Johns Hopkins…)
+3. 4 years and 9 months as senior biostatistician at Montpellier University Hospital
+4. Methods vetted by peer review in health and climate journals
+:::
+:::

@@ -1,0 +1,38 @@
+---
+title: "A toolkit tested in the field"
+pagetitle: "Skills · Alexis Bourgeois"
+eyebrow: "Skills"
+description: "Levels are stated honestly. Each skill links to a case study where it was used."
+page-layout: full
+listing:
+  id: skills
+  contents: ../data/skills.yml
+  sort: false
+  template: ../_partials/skills.ejs
+  template-params:
+    lang: en
+    seen: "see"
+    # titres des études de cas, affichés sous les compétences liées
+    cases:
+      c5b9: "Prognosis in membranous nephropathy: the role of C5b-9 deposits"
+      mapuce: "Bringing household behaviour into an urban climate model"
+      sensigaspi: "SENSI-GASPI: understanding household food waste"
+      spatialxplorer: "SpatialXploreR: explore and simulate at census-tract level"
+      ens: "Management plans for protected natural areas"
+      territoires: "Tender demonstrators: open data and accessibility"
+      cigale: "Airport noise annoyance: six resident profiles"
+      fair: "FAIR data and reproducible pipelines"
+    casePath: "projects/"
+    levels: ["Working knowledge, growing", "Proficient, used in projects", "Daily practice"]
+---
+
+```{=html}
+<p class="legend">
+  <span><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i></span> Daily practice</span>
+  <span><span class="lvl"><i class="on"></i><i class="on"></i><i></i></span> Proficient, used in projects</span>
+  <span><span class="lvl"><i class="on"></i><i></i><i></i></span> Working knowledge, growing</span>
+</p>
+```
+
+::: {#skills}
+:::

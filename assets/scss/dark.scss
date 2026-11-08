@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+// Thème SOMBRE : même structure que light.scss, autres valeurs.
+$body-bg:    #0E1418;
+$body-color: #E6ECEF;
+$primary:    #F5BE57;
+$secondary:  #9CC2D3;
+$link-color: #F5BE57;
+$border-color: #28343C;
+
+$navbar-bg: #162027;
+$navbar-fg: #9BA9B2;
+$navbar-hl: #E6ECEF;
+$footer-bg: #0E1418;
+$footer-fg: #9BA9B2;
+
+$font-family-sans-serif: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+$headings-font-family:   "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+$font-size-root: 16.5px;
+
+/*-- scss:rules --*/
+:root {
+  --bg: #0E1418;  --surface: #162027; --ink: #E6ECEF; --muted: #9BA9B2; --line: #28343C;
+  --honey: #F2B23A; --honey-ink: #F5BE57; --honey-soft: #33270F; --on-honey: #1B1406;
+  --slate: #9CC2D3; --slate-soft: #1C2B33;
+  --hex-lo: #2C2412; --hex-hi: #FFC85A;
+  --band-bg: #1B3340; --band-fg: #E6ECEF; --band-muted: #AFC3CD;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --toggle-track: #24495A; --toggle-knob: #E6ECEF; --toggle-knob-x: 3px; --toggle-icon-x: 28px;
+  --toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 3.2a8.6 8.6 0 1 0 5.3 13.9A7.2 7.2 0 0 1 15.5 3.2z' fill='%23F2B23A'/%3E%3Cpath d='M7 4.5l.5 1.3 1.3.5-1.3.5L7 8.1l-.5-1.3-1.3-.5 1.3-.5zM4.2 10.2l.35.9.9.35-.9.35-.35.9-.35-.9-.9-.35.9-.35z' fill='%23F2B23A'/%3E%3C/svg%3E");
+  --hexico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 44'%3E%3Cpath d='M20 2 38 12v20L20 42 2 32V12z' fill='%2333270F' stroke='%23F2B23A' stroke-width='2'/%3E%3Cpath d='M20 13 28 17.5v9L20 31l-8-4.5v-9z' fill='%23F2B23A'/%3E%3C/svg%3E");
+  color-scheme: dark;
+}
+
+@import "components";

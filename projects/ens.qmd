@@ -1,0 +1,67 @@
+---
+title: "Plans de gestion d'Espaces Naturels Sensibles"
+pagetitle: "Plans de gestion d'Espaces Naturels Sensibles · Alexis Bourgeois"
+description: Croiser enjeux écologiques et perceptions des usagers pour orienter la gestion.
+image: ../assets/img/mugel.jpg
+order: 5
+featured: true
+domain: territory
+domain-label: Territoires & environnement
+period: 2016 →
+setting: "Environnons, pour des gestionnaires d'ENS (La Tartuguière, La Ciotat, Marseilleveyre)"
+role: Analyse des entretiens, cartographie, visualisation
+key: 3 sites
+key-sub: perceptions et écologie sur une même carte
+tools:
+  - R
+  - ggplot2
+  - sf
+  - Sankey
+  - QGIS
+---
+
+## Contexte
+
+Un plan de gestion doit concilier biodiversité, paysages et usages. Les acteurs (gestionnaires, usagers, techniciens) n'ont pas la même lecture du site.
+
+## Question
+
+Quelles zones et quels thèmes ressortent pour chaque groupe d'acteurs, et où se superposent-ils aux enjeux écologiques ?
+
+## Données
+
+Entretiens codés par zone citée et par thème ; couches écologiques et d'usages (Parc du Mugel, Île Verte).
+
+## Méthode
+
+- Diagrammes radar : importance des thèmes par acteur
+- Diagramme de Sankey interactif : zones citées et thèmes associés
+- Cartographie R (ggplot2 + sf) et croisement de couches sous QGIS
+
+## Résultats
+
+Des cartes de synthèse qui localisent les conflits d'usage, la dégradation du milieu et l'évolution des paysages, et qui servent de base de discussion avec les acteurs.
+
+## Figures {.figures}
+
+::: {.gallery}
+![La Ciotat, Parc du Mugel : enjeux écologiques et usages](../assets/img/mugel.jpg){.lightbox group="ens"}
+
+![La Ciotat, Île Verte : usages](../assets/img/ileverte.jpg){.lightbox group="ens"}
+
+![Île Verte : zoom sur les enjeux d'usage](../assets/img/ileverte-enjeux.jpg){.lightbox group="ens"}
+
+![Importance des thèmes par acteur](../assets/img/radar.jpg){.lightbox group="ens"}
+
+![Zones citées et thèmes associés (Sankey)](../assets/img/sankey.jpg){.lightbox group="ens"}
+
+![La Tartuguière : zones citées par groupe d'acteurs](../assets/img/tartuguiere.jpg){.lightbox group="ens"}
+
+![Zones citées : dégradation du milieu, évolution des paysages](../assets/img/zones-degradation.jpg){.lightbox group="ens"}
+
+![Zones citées : conflits d'usage](../assets/img/conflit.jpg){.lightbox group="ens"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::

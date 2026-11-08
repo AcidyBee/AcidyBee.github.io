@@ -1,0 +1,58 @@
+---
+title: "SpatialXploreR: explore and simulate at census-tract level"
+pagetitle: "SpatialXploreR: explore and simulate at census-tract level · Alexis Bourgeois"
+description: Shiny/Leaflet web app that turns the MApUCE models into a foresight tool at census-tract level.
+image: ../../assets/img/sx-france.jpg
+order: 4
+featured: false
+domain: tools
+domain-label: Tools & reproducibility
+period: 2018, redesigned in 2025
+setting: Environnons, for the CNRS (follow-up to the MApUCE project)
+role: App design and development
+key: "> 50,000"
+key-sub: polygons explorable without lag
+tools:
+  - Shiny
+  - Leaflet
+  - golem
+  - sf
+---
+
+## Context
+
+Once the MApUCE project ended, its household energy-behaviour models had to be useful beyond the papers: exploring territories and simulating how they change. I built the app within Environnons, for the CNRS.
+
+## Question
+
+How can non-specialists use statistical models to simulate future scenarios, at fine scale and without lag?
+
+## Data
+
+More than 50,000 census-tract polygons for mainland France, linked to model outputs.
+
+## Method
+
+- Hierarchical area selection (region, département, municipality, tract) to limit computation and rendering
+- Modular app packaged with golem: each tab is a testable module
+- Foresight mode: change variables and see the effect on the map
+
+## Results
+
+An app that lets users pick an area, apply the models, aggregate results and simulate changes in a few clicks: for example an ageing population, or a shift in heating system or fuel.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Interactive map of France](../../assets/img/sx-france.jpg){.lightbox group="spatialxplorer"}
+
+![Hierarchical study-area selection](../../assets/img/sx-zone.jpg){.lightbox group="spatialxplorer"}
+
+![Exploring and aggregating results](../../assets/img/sx-agreg.jpg){.lightbox group="spatialxplorer"}
+
+![Modular package structure](../../assets/img/sx-pkg.jpg){.lightbox group="spatialxplorer"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

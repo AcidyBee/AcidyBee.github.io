@@ -1,0 +1,64 @@
+---
+title: "Pronostic de la néphropathie membraneuse : le rôle des dépôts de C5b-9"
+pagetitle: "Pronostic de la néphropathie membraneuse : le rôle des dépôts de C5b-9 · Alexis Bourgeois"
+description: "Analyse de survie publiée : un hazard ratio ajusté de 3,5 pour les patients C5b-9+, estimé avec son incertitude."
+image: ../assets/img/km.jpg
+order: 1
+featured: true
+domain: health
+domain-label: Santé
+period: 2020 – 2023
+setting: CHU de Montpellier, néphrologie
+role: "Biostatisticien : plan d'analyse, modèles, figures, Méthodes"
+key: HR = 3,54 [1,14 ; 11,0]
+key-sub: C5b-9+, modèle de Cox ajusté sur le DFG. IC 95 % large, à confirmer sur une cohorte externe
+tools:
+  - R
+  - survival
+  - Cox
+  - nomogramme
+  - ggplot2
+publication:
+  label: "Kidney International Reports, 2023 ; 8 : 103–114"
+  url: https://pubmed.ncbi.nlm.nih.gov/36644365/
+---
+
+## Contexte
+
+La néphropathie membraneuse évolue très différemment selon les patients. Les néphrologues cherchaient un marqueur histologique simple pour repérer tôt les formes à risque.
+
+## Question
+
+La présence de dépôts glomérulaires de C5b-9 à la biopsie prédit-elle la dégradation de la fonction rénale ?
+
+## Données
+
+Cohorte de 64 patients biopsiés (35 C5b-9−, 29 C5b-9+), suivis jusqu'à 150 mois : histologie, DFG, suivi clinique.
+
+## Méthode
+
+- Courbes de Kaplan-Meier et test du log-rank
+- Modèle de Cox multivarié (C5b-9, DFG), vérification de l'hypothèse des risques proportionnels
+- Prédictions par quartile de DFG et nomogramme pour la lecture clinique
+
+## Résultats
+
+La survie rénale est nettement plus faible chez les patients C5b-9+. À DFG égal, le risque instantané de dégradation est environ 3,5 fois plus élevé (HR 3,54 ; IC 95 % 1,14 à 11,0). L'intervalle reste large : il reflète l'effectif (64 patients) et appelle une validation sur une cohorte externe. Les dépôts de C5b-9 vont aussi de pair avec une intensité C4d plus élevée.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Survie rénale selon les dépôts de C5b-9 (Kaplan-Meier)](../assets/img/km.jpg){.lightbox group="c5b9"}
+
+![Prédictions du modèle de Cox selon C5b-9 et le quartile de DFG](../assets/img/cox.jpg){.lightbox group="c5b9"}
+
+![Rapports de risque du modèle multivarié](../assets/img/forest.jpg){.lightbox group="c5b9"}
+
+![Nomogramme : du modèle à un outil clinique](../assets/img/nomogram.jpg){.lightbox group="c5b9"}
+
+![Intensité C4d selon le statut C5b-9](../assets/img/c4d.jpg){.lightbox group="c5b9"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::

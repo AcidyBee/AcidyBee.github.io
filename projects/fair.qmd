@@ -1,0 +1,67 @@
+---
+title: Des données FAIR et des pipelines reproductibles
+pagetitle: Des données FAIR et des pipelines reproductibles · Alexis Bourgeois
+description: Données livrées comme des packages documentés, traitements orchestrés par targets, code versionné.
+image: ../assets/img/targets.jpg
+order: 8
+featured: false
+domain: tools
+domain-label: Outils & reproductibilité
+period: 2016 →
+setting: Pratique transversale, tous projets
+role: Auteur et mainteneur
+key: ≈ 30
+key-sub: packages R documentés, dont 5 de données
+tools:
+  - targets
+  - roxygen2
+  - pkgdown
+  - Git / Git LFS
+  - Quarto
+---
+
+## Contexte
+
+Un résultat qu'on ne peut pas régénérer est un résultat fragile. Je construis chaque projet pour qu'un collègue puisse le reprendre et le relancer.
+
+## Question
+
+Comment rendre des données Faciles à trouver, Accessibles, Interopérables et Réutilisables, au quotidien ?
+
+## Données
+
+Exemple : mapuce.data.2020, issu du fichier détail INSEE RP 2020 (8 690 731 lignes, 17 colonnes), avec ses couches spatiales.
+
+## Méthode
+
+- Packages de données : chaque variable documentée (roxygen2), site pkgdown, versionnage sémantique
+- Pipeline targets : seules les étapes impactées par un changement sont recalculées
+- Package cleanser : contrôles et recodages automatisés et traçables ; Git et Git LFS pour les gros fichiers
+
+## Résultats
+
+Environ 30 packages R développés et maintenus, dont 5 packages de données (santé, INSEE, spatial, itinéraires…), réutilisés d'un projet à l'autre.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Graphe de dépendances du pipeline targets](../assets/img/targets.jpg){.lightbox group="fair"}
+
+![Documentation des variables (roxygen2)](../assets/img/roxygen.jpg){.lightbox group="fair"}
+
+![Site de référence pkgdown](../assets/img/pkgdown.jpg){.lightbox group="fair"}
+
+![Une page d'aide par jeu de données](../assets/img/doc-help.jpg){.lightbox group="fair"}
+
+![Recodage automatique avec cleanser](../assets/img/cleanser.jpg){.lightbox group="fair"}
+
+![Historique Git : branches et fusions](../assets/img/git.jpg){.lightbox group="fair"}
+
+![Bibliothèque de packages](../assets/img/packages.jpg){.lightbox group="fair"}
+
+![Packages thématiques](../assets/img/packages-2.jpg){.lightbox group="fair"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::

@@ -1,0 +1,35 @@
+---
+title: "23 publications"
+pagetitle: "Publications · Alexis Bourgeois"
+eyebrow: "Publications"
+description: "17 peer-reviewed journal articles, 5 conference papers and 1 book chapter across three fields: biostatistics, urban climate and energy, and materials physics."
+page-layout: full
+listing:
+  id: pubs
+  contents: ../data/publications.yml
+  sort: false
+  page-size: 200
+  template: ../_partials/publications.ejs
+  template-params:
+    art1: "article"
+    artN: "articles"
+    com1: "other publication"
+    comN: "other publications"
+    conf: "Conference"
+    poster: "Poster"
+    chapter: "Book chapter"
+    groups:
+      - id: biostat
+        label: "Biostatistics"
+      - id: climate
+        label: "Urban climate, energy and social science (MApUCE project)"
+      - id: physics
+        label: "Materials physics (ellipsometry, porosimetry)"
+---
+
+::: {.btns}
+[Full ORCID profile](https://orcid.org/0009-0009-8513-1715){.btn .btn-honey}
+:::
+
+::: {#pubs}
+:::

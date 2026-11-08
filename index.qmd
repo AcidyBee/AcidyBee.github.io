@@ -1,0 +1,152 @@
+---
+pagetitle: "Alexis Bourgeois · AcidyBee"
+description: "Depuis 15 ans, je fiabilise, modélise et spatialise des données complexes pour la recherche, la santé et l'action publique : du nettoyage reproductible jusqu'au modèle publié et à l'application interactive."
+page-layout: full
+listing:
+  id: featured
+  contents: /projects/*.qmd
+  include:
+    featured: true
+  sort: order
+  template: _partials/project-card.ejs
+  template-params:
+    more: "Lire l’étude de cas →"
+---
+
+<!-- ============ Accroche + hexbin ============ -->
+::: {.hero}
+::: {.copy}
+[Data scientist senior · biostatisticien · Montpellier]{.eyebrow}
+
+# Des données *fiables* pour des décisions éclairées
+
+[Depuis 15 ans, je fiabilise, modélise et spatialise des données complexes pour la recherche, la santé et l'action publique : du nettoyage reproductible jusqu'au modèle publié et à l'application interactive.]{.lead}
+
+::: {.tags}
+[R / Shiny]{.tag} [SQL / PostGIS]{.tag} [Git / GitHub]{.tag} [targets · Quarto]{.tag} [QGIS · Leaflet · sf · terra]{.tag}
+:::
+
+::: {.btns}
+[Voir les études de cas](projects.qmd){.btn .btn-honey}
+[GitHub](https://github.com/AcidyBee){.btn}
+[ORCID](https://orcid.org/0009-0009-8513-1715){.btn}
+:::
+:::
+
+```{=html}
+<figure class="hexcard" data-hexbin data-src="/data/pav_web.json" data-lang="fr">
+  <div class="hexhead">
+    <span class="eyebrow">Points d'apport volontaire · Grenoble-Alpes Métropole</span>
+    <a class="hexcode" href="https://github.com/AcidyBee/pav-grenoble-hexbin">Code R / Python ↗</a>
+  </div>
+  <div class="hexbody">
+    <div class="hexplot"><canvas data-hex="canvas" role="img"></canvas><div class="hextip" data-hex="tip" hidden></div></div>
+    <div class="hexside">
+      <div class="hexchips" data-hex="chips" role="group"></div>
+      <div class="hexleg"><span>Conteneurs par hexagone</span><div class="bar"></div><div class="ends"><span>1</span><span data-hex="max"></span></div></div>
+      <p class="hexsum" data-hex="sum"></p>
+    </div>
+  </div>
+  <figcaption><span>Hexagones de 1 km · Lambert-93 · open data Grenoble-Alpes Métropole</span><a href="projects/territoires.html">Voir le démonstrateur d'itinéraires →</a></figcaption>
+</figure>
+<script src="/assets/js/hexbin.js" defer></script>
+```
+:::
+
+<!-- ============ Chiffres clés ============ -->
+::: {.block}
+::: {.stats}
+::: {.stat}
+**15** ans d'analyse de données
+:::
+::: {.stat}
+**23** publications, dont 17 articles à comité de lecture
+:::
+::: {.stat}
+**≈ 30** packages R développés, dont 5 de données
+:::
+::: {.stat}
+**9** thèses accompagnées au CHU
+:::
+::: {.stat}
+**1er** prix, hackathon data du Ministère (2016)
+:::
+:::
+:::
+
+<!-- ============ Trois publics ============ -->
+::: {.block}
+::: {.sec-head}
+[Pour qui]{.eyebrow}
+
+## Un même socle, trois façons de travailler ensemble
+:::
+
+::: {.aud}
+::: {.aud-item}
+### Recruteurs et équipes de recherche
+
+Un biostatisticien qui accompagne les chercheurs de la question à l'article.
+
+- Choix et critique des méthodes
+- Sections Méthodes, figures publiables
+- Données FAIR, code versionné
+:::
+::: {.aud-item}
+### Collectivités et bureaux d'études
+
+Un partenaire technique pour vos appels d'offres et vos diagnostics territoriaux.
+
+- Données ouvertes (INSEE, BAN, OSM)
+- Cartographie à l'IRIS et à la commune
+- Démonstrateurs livrés rapidement
+:::
+::: {.aud-item}
+### Collègues et étudiants
+
+Des formations et des outils pour gagner en autonomie.
+
+- Ateliers R, Git, pipelines reproductibles
+- Packages et applications documentés
+- Vulgarisation des résultats
+:::
+:::
+:::
+
+<!-- ============ Études à la une (listing « featured ») ============ -->
+::: {.block}
+::: {.sec-head .sec-head-row}
+::: {.sec-title}
+[Études de cas à la une]{.eyebrow}
+
+## De la question à la décision
+:::
+
+[Les 8 études de cas](projects.qmd){.btn}
+:::
+
+::: {#featured}
+:::
+:::
+
+<!-- ============ Parcours atypique ============ -->
+::: {.block}
+::: {.band}
+::: {.band-text}
+[Parcours atypique]{.eyebrow}
+
+## Physicien de formation, statisticien par la pratique
+
+Je n'ai pas de diplôme de statistique. J'ai une thèse de physique, où la mesure, l'incertitude et la modélisation sont le quotidien, puis quinze ans de pratique jugée par des pairs : des revues, un jury de hackathon, des équipes hospitalières.
+
+::: {.btns}
+[Lire mon parcours](about.qmd){.btn}
+:::
+:::
+
+1. Thèse de physique (mention très honorable) : mesure, incertitude et modélisation inverse
+2. Formation continue en statistique depuis 2012 (Stanford, Duke, Johns Hopkins…)
+3. 4 ans et 9 mois de biostatisticien senior au CHU de Montpellier
+4. Des méthodes validées par des comités de lecture en santé et en climat
+:::
+:::

@@ -1,0 +1,223 @@
+# Compétences, lues par skills.qmd. level : 1 = notions, 2 = maîtrisé, 3 = pratique quotidienne.
+# case : identifiant d'une fiche projet (nom du fichier dans projects/, sans .qmd).
+# « title » sert seulement à Quarto ; l'affichage utilise « group ».
+
+- title: Statistique et modélisation
+  group:
+    fr: Statistique et modélisation
+    en: Statistics and modelling
+  skills:
+    - name:
+        fr: Statistiques descriptives et inférentielles
+        en: Descriptive and inferential statistics
+      note:
+        fr: tests, intervalles de confiance, ANOVA
+        en: tests, confidence intervals, ANOVA
+      level: 3
+      case: c5b9
+    - name:
+        fr: Régression linéaire et logistique
+        en: Linear and logistic regression
+      level: 3
+      case: mapuce
+    - name:
+        fr: Analyse de survie
+        en: Survival analysis
+      note:
+        fr: Kaplan-Meier, Cox, nomogrammes
+        en: Kaplan-Meier, Cox, nomograms
+      level: 3
+      case: c5b9
+    - name:
+        fr: Modèles mixtes et GLS
+        en: Mixed models and GLS
+      note:
+        fr: mesures répétées, structures de corrélation
+        en: repeated measures, correlation structures
+      level: 2
+    - name:
+        fr: Analyse multivariée
+        en: Multivariate analysis
+      note:
+        fr: ACP, AFC, classification, segmentation
+        en: PCA, CA, clustering, segmentation
+      level: 3
+      case: cigale
+    - name:
+        fr: Machine learning
+        en: Machine learning
+      note:
+        fr: forêts aléatoires, gradient boosting, validation croisée
+        en: random forests, gradient boosting, cross-validation
+      level: 2
+      case: mapuce
+    - name:
+        fr: Rééchantillonnage
+        en: Resampling
+      note:
+        fr: bootstrap, validation croisée
+        en: bootstrap, cross-validation
+      level: 3
+      case: mapuce
+    - name:
+        fr: Approches bayésiennes
+        en: Bayesian methods
+      note:
+        fr: modèles hiérarchiques, inférence bayésienne
+        en: hierarchical models, Bayesian inference
+      level: 1
+- title: Spatial et temporel
+  group:
+    fr: Spatial et temporel
+    en: Spatial and temporal
+  skills:
+    - name:
+        fr: Cartographie et agrégation territoriale
+        en: Mapping and territorial aggregation
+      note:
+        fr: IRIS, communes, choroplèthes
+        en: census tracts, municipalities, choropleths
+      level: 3
+      case: territoires
+    - name:
+        fr: Croisement de couches, SIG
+        en: Layer overlays, GIS
+      note: QGIS · sf · terra · PostGIS
+      level: 3
+      case: ens
+    - name:
+        fr: "Calcul d'itinéraires et accessibilité"
+        en: Routing and accessibility
+      note:
+        fr: serveur OSRM local
+        en: local OSRM server
+      level: 2
+      case: territoires
+    - name:
+        fr: Séries temporelles
+        en: Time series
+      note:
+        fr: ARIMA, diagnostic, prévision
+        en: ARIMA, diagnostics, forecasting
+      level: 2
+    - name:
+        fr: Cartographie interactive
+        en: Interactive mapping
+      note: Leaflet · Shiny
+      level: 3
+      case: spatialxplorer
+- title: Données et science ouverte
+  group:
+    fr: Données et science ouverte
+    en: Data and open science
+  skills:
+    - name:
+        fr: Fiabilisation des données
+        en: Data quality
+      note:
+        fr: "nettoyage, contrôle qualité, détection d'anomalies"
+        en: cleaning, quality control, anomaly detection
+      level: 3
+      case: fair
+    - name:
+        fr: Principes FAIR, métadonnées
+        en: FAIR principles, metadata
+      note:
+        fr: tidy data, documentation, dictionnaires
+        en: tidy data, documentation, data dictionaries
+      level: 3
+      case: fair
+    - name:
+        fr: Fusion de sources hétérogènes
+        en: Merging heterogeneous sources
+      note:
+        fr: harmonisation, feature engineering
+        en: harmonisation, feature engineering
+      level: 3
+      case: mapuce
+    - name:
+        fr: Bases de données relationnelles
+        en: Relational databases
+      note: SQL · PostgreSQL / PostGIS
+      level: 3
+    - name:
+        fr: Dépôt et partage de données
+        en: Data deposit and sharing
+      note:
+        fr: "GitHub ; Dataverse en cours d'adoption"
+        en: GitHub; Dataverse being adopted
+      level: 2
+- title: Programmation et outils
+  group:
+    fr: Programmation et outils
+    en: Programming and tools
+  skills:
+    - name: R / Shiny
+      note:
+        fr: analyse, visualisation, packages, applications
+        en: analysis, visualisation, packages, apps
+      level: 3
+      case: fair
+    - name:
+        fr: Pipelines reproductibles
+        en: Reproducible pipelines
+      note: targets · Quarto · RMarkdown
+      level: 3
+      case: fair
+    - name:
+        fr: Versionnage
+        en: Version control
+      note: Git / GitHub · Git LFS
+      level: 3
+      case: fair
+    - name:
+        fr: Applications web
+        en: Web apps
+      note: Shiny · golem · Leaflet · HTML
+      level: 3
+      case: spatialxplorer
+    - name: Python
+      level: 1
+    - name: SAS
+      level: 1
+    - name:
+        fr: Conteneurs
+        en: Containers
+      note: Docker
+      level: 1
+- title: Transmission
+  group:
+    fr: Transmission
+    en: Sharing knowledge
+  skills:
+    - name:
+        fr: Conseil méthodologique
+        en: Methods consulting
+      note:
+        fr: choix des méthodes, interprétation
+        en: method choice, interpretation
+      level: 3
+      case: c5b9
+    - name:
+        fr: Formation et ateliers
+        en: Training and workshops
+      note:
+        fr: industrie, université, collectivités, santé
+        en: industry, universities, local government, healthcare
+      level: 3
+    - name:
+        fr: Rédaction scientifique
+        en: Scientific writing
+      note:
+        fr: sections Méthodes, rapports techniques
+        en: Methods sections, technical reports
+      level: 3
+      case: c5b9
+    - name:
+        fr: Vulgarisation
+        en: Science communication
+      note:
+        fr: facilitation graphique, applications
+        en: graphic facilitation, apps
+      level: 3
+      case: cigale

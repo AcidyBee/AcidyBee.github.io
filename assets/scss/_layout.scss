@@ -1,0 +1,81 @@
+// ---- Mise en page : colonne centrale, navigation, pied de page -------
+// Le site n'utilise ni barre latérale ni marge : on remplace la grille
+// de Quarto par une colonne centrée de 1120 px.
+#quarto-content.page-columns,
+#quarto-content { display: block; max-width: 1120px; margin: 0 auto; padding: 0 16px 72px; }
+// Quarto pose sa propre grille (.page-columns) sur main et sur l'en-tête :
+// on la neutralise pour garder la main sur la mise en page.
+#quarto-content main.content { display: block; margin-top: 0; }
+#quarto-content .page-head > *,
+#quarto-content .page-head-grid > * { grid-column: auto !important; }
+.block { padding-top: 56px; }
+
+// Barre de navigation
+.navbar {
+  background: color-mix(in srgb, var(--surface) 92%, transparent) !important;
+  backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--line);
+  .navbar-brand { gap: 10px; }
+  .navbar-title { font-family: $display; font-weight: 700; color: var(--ink); }
+  .navbar-logo { max-height: 42px; }
+  .navbar-logo-svg { display: block; line-height: 0; }
+  .nav-link { font-weight: 500; color: var(--muted); border-radius: 999px; padding: 8px 12px !important; }
+  .nav-link:hover { color: var(--ink); background: var(--slate-soft); }
+  .nav-link.active { color: var(--ink); background: var(--honey-soft); }
+  // même largeur que le contenu
+  .navbar-container { max-width: 1120px; margin: 0 auto; padding-inline: 16px; }
+  .navbar-brand-container { margin-left: 0 !important; margin-right: 0 !important; }
+  // sous-titre sous le nom (ajouté en CSS : rien à maintenir dans le YAML)
+  .navbar-title::after { content: "AcidyBee · data & stats"; display: block; font: 400 .72rem $mono; color: var(--muted); line-height: 1.2; }
+  .navbar-title { line-height: 1.1; }
+  @media (max-width: 480px) {
+    .navbar-title { font-size: 1rem; overflow: visible; }
+    .navbar-title::after { display: none; }
+  }
+  // menu principal aligné à droite, avant le sélecteur de langue
+  @media (min-width: 992px) {
+    .navbar-nav.me-auto { margin-left: auto !important; margin-right: 14px !important; }
+  }
+  // sélecteur de langue FR | EN (deux liens accolés, l'actif est en couleur pleine)
+  // même hauteur (28 px) et même arrondi que l'interrupteur clair / sombre
+  .navbar-nav.ms-auto { flex-direction: row; height: 28px; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin-left: 0 !important; width: max-content; }
+  .navbar-nav.ms-auto .nav-link { display: flex; align-items: center; height: 26px; font: 500 .75rem/1 $mono; border-radius: 0; padding: 0 11px !important; color: var(--muted); background: none; }
+  .navbar-nav.ms-auto .nav-link:hover { color: var(--ink); background: var(--slate-soft); }
+  .navbar-nav.ms-auto .nav-link.lang-current { background: var(--ink); color: var(--surface); }
+}
+
+// Interrupteur clair / sombre : on habille le lien fourni par Quarto.
+// Position du curseur et icône (soleil / lune) viennent des jetons du thème
+// actif (light.scss ou dark.scss) : aucun JavaScript nécessaire.
+.quarto-navbar-tools { display: flex; align-items: center; margin-left: 10px; }
+.quarto-color-scheme-toggle {
+  position: relative; display: inline-block; width: 54px; height: 28px; padding: 0 !important; flex: none;
+  border-radius: 999px; background: var(--toggle-track); box-shadow: inset 0 0 0 1px rgba(0,0,0,.12);  // liseré uniforme (une ombre en haut donnait un effet « coupé »)
+  .bi { display: none; }
+  &::before { content: ""; position: absolute; top: 3px; left: var(--toggle-knob-x); width: 22px; height: 22px; border-radius: 50%;
+    background: var(--toggle-knob); box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.25); transition: left .25s ease; }
+  &::after { content: ""; position: absolute; top: 5px; left: var(--toggle-icon-x); width: 18px; height: 18px;
+    background: var(--toggle-icon) center / contain no-repeat; transition: left .25s ease; }
+  &:hover { filter: brightness(1.08); }
+}
+
+// En-tête de page générique (partial title-block.html)
+#quarto-content .page-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; padding-block: 44px 20px; margin-bottom: 0; }
+#quarto-content .page-head-grid { display: grid; grid-template-columns: minmax(0, 1fr);
+  &:has(.keybox) { grid-template-columns: minmax(0, 1fr) 300px; }
+  gap: 32px; align-items: start; }
+.page-head-main { display: grid; gap: 16px; }
+.page-head .title { margin: 0; }
+.page-head .lead { margin: 0; }
+@media (max-width: 860px) { #quarto-content .page-head-grid, #quarto-content .page-head-grid:has(.keybox) { grid-template-columns: 1fr; gap: 20px; } }
+
+// Pied de page : aligné sur la colonne centrale, liens miel soulignés
+footer.footer { border-top: 1px solid var(--line); }
+.nav-footer { max-width: 1120px; margin: 0 auto; padding: 26px 16px; border-top: 0; font-size: .88rem; color: var(--muted); }
+.nav-footer .nav-footer-left, .nav-footer .nav-footer-right { flex: 1 1 auto; font-size: .88rem; }
+.nav-footer * { font-size: .88rem; }
+.nav-footer .nav-footer-left { text-align: left; }
+.nav-footer .nav-footer-right { justify-content: flex-end; }
+.nav-footer .nav-link, .nav-footer a { color: var(--honey-ink); text-decoration: underline; text-underline-offset: 3px; padding: 0 !important; }
+.nav-footer .nav-item + .nav-item { margin-left: 16px; }
+.nav-footer a:hover { color: var(--ink); }

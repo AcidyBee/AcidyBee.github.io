@@ -1,0 +1,21 @@
+<%
+/* Publications groupées par thème. Données : data/publications.yml.
+   templateParams (défini dans publications.qmd) : libellés dans la langue
+   de la page, et ordre + noms des groupes. */
+const P = templateParams;
+const kindLabel = { c: P.conf, p: P.poster, ch: P.chapter };
+const plural = (n, one, many) => n + " " + (n > 1 ? many : one);
+%>
+<div class="pubs">
+<% for (const g of P.groups) { const list = items.filter(it => it.group === g.id).sort((a, b) => b.year - a.year); const nArt = list.filter(it => it.kind === "a").length, nOther = list.length - nArt; %><section class="pubgroup">
+<h3 class="no-anchor"><%= g.label %> <span><%= [nArt ? plural(nArt, P.art1, P.artN) : "", nOther ? plural(nOther, P.com1, P.comN) : ""].filter(Boolean).join(" · ") %></span></h3>
+<% for (const it of list) { %><article class="pub">
+<span class="yr"><%= it.year %></span>
+<div>
+<% if (it.kind !== "a") { %><span class="kind"><%= kindLabel[it.kind] %></span><% } %><div class="t"><%= it.title %></div>
+<div class="a"><%= String(it.authors).replace("A. Bourgeois", '<span class="me">A. Bourgeois</span>') %></div>
+<% if (it.venue) { %><div class="j"><%= it.venue %></div><% } %><% if (it.links && it.links.length) { %><div class="links"><% for (const l of it.links) { %><a href="<%= l.url %>"><%= l.label %> ↗</a><% } %></div><% } %>
+</div>
+</article>
+<% } %></section>
+<% } %></div>

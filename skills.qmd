@@ -1,0 +1,38 @@
+---
+title: "Une boîte à outils éprouvée sur le terrain"
+pagetitle: "Compétences · Alexis Bourgeois"
+eyebrow: "Compétences"
+description: "Les niveaux sont déclarés honnêtement. Chaque compétence renvoie à une étude de cas où elle a servi."
+page-layout: full
+listing:
+  id: skills
+  contents: data/skills.yml
+  sort: false
+  template: _partials/skills.ejs
+  template-params:
+    lang: fr
+    seen: "voir"
+    # titres des études de cas, affichés sous les compétences liées
+    cases:
+      c5b9: "Pronostic de la néphropathie membraneuse : le rôle des dépôts de C5b-9"
+      mapuce: "Intégrer les comportements des ménages dans un modèle de climat urbain"
+      sensigaspi: "SENSI-GASPI : comprendre le gaspillage alimentaire des ménages"
+      spatialxplorer: "SpatialXploreR : explorer et simuler à l'échelle de l'IRIS"
+      ens: "Plans de gestion d'Espaces Naturels Sensibles"
+      territoires: "Démonstrateurs pour appels d'offres : données ouvertes et accessibilité"
+      cigale: "Gêne aéroportuaire : six profils de riverains"
+      fair: "Des données FAIR et des pipelines reproductibles"
+    casePath: "projects/"
+    levels: ["Notions, en progression", "Maîtrisé, utilisé en projet", "Pratique quotidienne"]
+---
+
+```{=html}
+<p class="legend">
+  <span><span class="lvl"><i class="on"></i><i class="on"></i><i class="on"></i></span> Pratique quotidienne</span>
+  <span><span class="lvl"><i class="on"></i><i class="on"></i><i></i></span> Maîtrisé, utilisé en projet</span>
+  <span><span class="lvl"><i class="on"></i><i></i><i></i></span> Notions, en progression</span>
+</p>
+```
+
+::: {#skills}
+:::

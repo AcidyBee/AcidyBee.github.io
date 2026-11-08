@@ -1,0 +1,59 @@
+<!--
+  En-tête de page (remplace le title-block par défaut de Quarto).
+  Syntaxe Pandoc : un nom entre dollars lit le front matter de la page,
+  et les blocs « if / elseif / endif » testent si un champ existe.
+  - Pages ordinaires : surtitre (eyebrow), titre, chapeau (description).
+  - Fiches projet (si le champ « period » existe) : en plus, encadré
+    « résultat clé », fiche signalétique, outils, liens.
+  Les libellés (ui.*) viennent de projects/_metadata.yml (et en/projects/).
+-->
+<header id="title-block-header" class="quarto-title-block page-head$if(period)$ case-head$endif$">
+$if(period)$
+  <a class="back" href="../projects.html">$ui.back$</a>
+$endif$
+  <div class="page-head-grid">
+    <div class="page-head-main">
+$if(eyebrow)$
+      <p class="eyebrow">$eyebrow$</p>
+$endif$
+$if(title)$
+      <h1 class="title">$title$</h1>
+$endif$
+$if(description)$
+      <p class="lead">$description$</p>
+$endif$
+$if(tools)$
+      <div class="tags">$for(tools)$<span class="tag">$tools$</span>$endfor$</div>
+$endif$
+    </div>
+$if(key)$
+    <aside class="keybox">
+      <p class="eyebrow">$ui.key$</p>
+      <p class="key">$key$</p>
+$if(key-sub)$
+      <p class="key-sub">$key-sub$</p>
+$endif$
+    </aside>
+$endif$
+  </div>
+$if(period)$
+  <dl class="facts">
+    <div><dt>$ui.setting$</dt><dd>$setting$</dd></div>
+    <div><dt>$ui.period$</dt><dd>$period$</dd></div>
+    <div><dt>$ui.role$</dt><dd>$role$</dd></div>
+    <div><dt>$ui.domain$</dt><dd>$domain-label$</dd></div>
+  </dl>
+$endif$
+$if(publication)$
+  <div class="btns head-links">
+    <a class="btn btn-line" href="$publication.url$">$ui.pub$ : $publication.label$ ↗</a>
+$if(code)$
+    <a class="btn btn-line" href="$code.url$">$ui.code$ : $code.label$ ↗</a>
+$endif$
+  </div>
+$elseif(code)$
+  <div class="btns head-links">
+    <a class="btn btn-line" href="$code.url$">$ui.code$ : $code.label$ ↗</a>
+  </div>
+$endif$
+</header>

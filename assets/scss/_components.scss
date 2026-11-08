@@ -1,0 +1,11 @@
+// ---------------------------------------------------------------------
+// Index des composants, importé par light.scss et dark.scss.
+// Chaque fichier ne contient que des règles qui utilisent les jetons
+// var(--…) : il fonctionne donc à l'identique en clair et en sombre.
+// ---------------------------------------------------------------------
+@import "base";      // typographie, liens, boutons, étiquettes
+@import "layout";    // barre de navigation, colonne centrale, pied de page
+@import "home";      // accueil : hero, hexbin, chiffres, publics, bandeau
+@import "cards";     // cartes projet et filtres
+@import "case";      // fiches projet : en-tête, étapes, galerie
+@import "pages";     // parcours, compétences, publications, contact

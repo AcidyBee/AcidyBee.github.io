@@ -1,0 +1,15 @@
+# Réglages appliqués à toutes les fiches de ce dossier
+body-classes: case-page
+lightbox: true
+page-layout: full
+
+# Libellés lus par _partials/title-block.html
+ui:
+  back: "← All case studies"
+  setting: "Setting"
+  period: "Period"
+  role: "My role"
+  domain: "Field"
+  key: "Key result"
+  pub: "Deliverable or publication"
+  code: "Source code"

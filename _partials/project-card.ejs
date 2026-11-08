@@ -1,0 +1,23 @@
+<%
+/* Carte projet. Syntaxe des modèles lodash (utilisée par Quarto) :
+   balise « pourcent » simple pour la logique JavaScript, avec « = » pour
+   insérer une valeur (voir README.md).
+   Utilisée par les listings de index.qmd (à la une) et projects.qmd.
+   Champs lus dans le front matter de chaque projects/*.qmd :
+   title, description, image, domain, domain-label.
+   Toute la carte est cliquable grâce au lien du titre, étiré en CSS
+   (un <a> ne peut pas contenir de blocs sans perturber Pandoc).
+   Pas de lignes vides ni d'indentation : Pandoc relit ce HTML comme du
+   Markdown, et une ligne indentée deviendrait un bloc de code. */
+%>
+<div class="card-grid">
+<% for (const item of items) { %><div class="pcard" data-domain="<%= item.domain %>" data-domain-label="<%= item['domain-label'] %>" <%= metadataAttrs(item) %>>
+<div class="thumb"><img src="<%= item.image %>" alt="" loading="lazy"></div>
+<div class="body">
+<p class="dom"><%= item['domain-label'] %></p>
+<h3 class="no-anchor listing-title"><a href="<%= item.path %>"><%= item.title %></a></h3>
+<p class="listing-description"><%= item.description %></p>
+</div>
+<span class="more" aria-hidden="true"><%= templateParams.more %></span>
+</div>
+<% } %></div>

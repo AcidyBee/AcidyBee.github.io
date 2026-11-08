@@ -1,0 +1,35 @@
+# Profil français : la racine du site.
+# Utilisé par : quarto render --profile fr   (ou quarto preview --profile fr)
+lang: fr-FR
+
+project:
+  output-dir: _site_fr
+  render:
+    - "*.qmd"
+    - "projects/*.qmd"
+    - "!en/"
+    - "!README.md"
+
+website:
+  description: "Alexis Bourgeois (AcidyBee), data scientist senior et biostatisticien à Montpellier : fiabilisation de données, modélisation statistique, analyse spatiale, applications Shiny."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: about.qmd
+        text: Parcours
+      - href: projects.qmd
+        text: Projets
+      - href: skills.qmd
+        text: Compétences
+      - href: publications.qmd
+        text: Publications
+      - href: contact.qmd
+        text: Contact
+    right:                 # sélecteur de langue (liens réécrits par assets/js/site.js)
+      - href: index.qmd
+        text: FR
+        aria-label: "Version française"
+      - href: en/index.qmd
+        text: EN
+        aria-label: "English version"

@@ -1,0 +1,64 @@
+# =====================================================================
+# Configuration commune aux deux langues.
+# Les réglages propres à chaque langue (navbar, libellés, dossier de
+# sortie) sont dans _quarto-fr.yml et _quarto-en.yml (« profils »).
+# Construire le site complet : ./build.sh
+# Prévisualiser en français : quarto preview --profile fr
+# =====================================================================
+profile:
+  default: fr           # sans --profile, Quarto (et le bouton Render) utilise le français
+
+project:
+  type: website
+  resources:            # fichiers copiés tels quels dans le site publié
+    - assets/js/
+    - assets/img/
+    - data/pav_web.json
+    - .nojekyll
+
+website:
+  site-url: https://acidybee.github.io
+  favicon: assets/img/favicon.svg
+  image: assets/img/og-card.jpg     # image de partage par défaut (LinkedIn…)
+  open-graph: true
+  twitter-card: true
+  search: false
+  page-navigation: false
+  back-to-top-navigation: false
+  navbar:
+    logo: assets/img/logo.svg
+    logo-alt: "AcidyBee"
+    title: "Alexis Bourgeois"
+    background: light       # les couleurs réelles viennent du thème SCSS
+    collapse-below: lg
+  page-footer:
+    left: "© 2026 Alexis Bourgeois · AcidyBee"
+    right:
+      - text: GitHub
+        href: https://github.com/AcidyBee
+      - text: ORCID
+        href: https://orcid.org/0009-0009-8513-1715
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/alexisbourgeois
+
+format:
+  html:
+    theme:
+      light: assets/scss/light.scss
+      dark: assets/scss/dark.scss
+    respect-user-color-scheme: true    # suit le réglage clair/sombre du visiteur
+    include-in-header: _partials/head.html
+    include-after-body: _partials/after-body.html
+    template-partials:
+      - _partials/title-block.html     # en-tête des pages (et fiches projet)
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+    lightbox: auto                     # zoom sur les images marquées .lightbox
+    citations-hover: false
+    footnotes-hover: false
+
+execute:
+  freeze: auto    # les calculs R ne sont relancés que si le .qmd change

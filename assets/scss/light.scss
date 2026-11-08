@@ -1,0 +1,40 @@
+/*-- scss:defaults --*/
+// ---------------------------------------------------------------------
+// Thème CLAIR. Deux niveaux :
+//  1. « defaults » : variables Bootstrap/Quarto (couleurs de base, polices)
+//  2. « rules »    : nos jetons de design (variables CSS --…) + composants
+// Le thème sombre (dark.scss) a exactement la même structure.
+// ---------------------------------------------------------------------
+$body-bg:    #F3F5F6;
+$body-color: #18232B;
+$primary:    #94590A;   // miel foncé : liens, éléments actifs
+$secondary:  #24495A;   // ardoise
+$link-color: #94590A;
+$border-color: #DCE2E6;
+
+$navbar-bg: #FFFFFF;
+$navbar-fg: #56646E;
+$navbar-hl: #18232B;
+$footer-bg: #F3F5F6;
+$footer-fg: #56646E;
+
+$font-family-sans-serif: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+$headings-font-family:   "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+$font-size-root: 16.5px;
+
+/*-- scss:rules --*/
+:root {
+  --bg: #F3F5F6;  --surface: #FFFFFF; --ink: #18232B; --muted: #56646E; --line: #DCE2E6;
+  --honey: #E8A11C; --honey-ink: #94590A; --honey-soft: #FBEFD4; --on-honey: #1B1406;
+  --slate: #24495A; --slate-soft: #E3ECF0;
+  --hex-lo: #FBEBC6; --hex-hi: #7A4406;
+  --band-bg: #24495A; --band-fg: #F3F5F6; --band-muted: #C9D7DE;
+  --shadow: 0 1px 2px rgba(24,35,43,.06), 0 8px 24px rgba(24,35,43,.06);
+  // interrupteur clair / sombre (voir _layout.scss)
+  --toggle-track: #E8A11C; --toggle-knob: #FFFFFF; --toggle-knob-x: 26px; --toggle-icon-x: 6px;
+  --toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B1406' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='4.2' fill='%231B1406'/%3E%3Cpath d='M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6'/%3E%3C/svg%3E");
+  --hexico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 44'%3E%3Cpath d='M20 2 38 12v20L20 42 2 32V12z' fill='%23FBEFD4' stroke='%23E8A11C' stroke-width='2'/%3E%3Cpath d='M20 13 28 17.5v9L20 31l-8-4.5v-9z' fill='%23E8A11C'/%3E%3C/svg%3E");   // pictogramme des cartes « Pour qui »
+}
+
+@import "components";

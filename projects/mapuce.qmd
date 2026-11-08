@@ -1,0 +1,60 @@
+---
+title: Intégrer les comportements des ménages dans un modèle de climat urbain
+pagetitle: Intégrer les comportements des ménages dans un modèle de climat urbain · Alexis Bourgeois
+description: "Machine learning sur trois enquêtes nationales, appliqué à toute la France à l'échelle de l'IRIS."
+image: ../assets/img/teb.jpg
+order: 2
+featured: true
+domain: climate
+domain-label: Climat & énergie
+period: 2014 – 2016
+setting: ANR MApUCE · CNRS / LATTS, avec Météo-France
+role: "Data scientist : fusion des données, modèles, spatialisation, articles"
+key: France entière
+key-sub: modèles applicables à chaque IRIS
+tools:
+  - R
+  - machine learning
+  - validation croisée
+  - sf
+  - PostGIS
+publication:
+  label: 3 articles (Geoscientific Model Development 2017, Energy Research & Social Science 2017, La Météorologie 2019) et 5 communications en conférence
+  url: ../publications.html
+---
+
+## Contexte
+
+Les îlots de chaleur urbains dépendent aussi de nos usages : chauffage, climatisation, équipements. Le modèle de climat urbain TEB de Météo-France ne représentait pas cette diversité de comportements.
+
+## Question
+
+Peut-on prédire les comportements énergétiques des ménages à partir de variables disponibles partout en France, pour les injecter dans TEB ?
+
+## Données
+
+Trois enquêtes aux granularités et regroupements différents (Energihab, INSEE Logement, Enquête nationale Logement), harmonisées avec un important travail de feature engineering.
+
+## Méthode
+
+- Harmonisation des variables entre enquêtes, sélection des variables informatives
+- Modèles de machine learning sélectionnés par validation croisée à 10 plis
+- Application des modèles à l'IRIS et cartographie (Toulouse, Paris)
+
+## Résultats
+
+Des modèles de régulation thermique, de taux d'équipement et d'intensité d'usage, applicables à toute la France métropolitaine à l'échelle de l'IRIS, et intégrés à la paramétrisation de TEB (SURFEX v8.2). Ils ont ensuite été valorisés dans SpatialXploreR, une application de prospective.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Méthodologie : de la donnée au modèle de climat urbain](../assets/img/teb.jpg){.lightbox group="mapuce"}
+
+![Toulouse : régulation énergétique et intensité d'usage](../assets/img/toulouse.jpg){.lightbox group="mapuce"}
+
+![Paris : répartition spatiale des prédicteurs](../assets/img/paris.jpg){.lightbox group="mapuce"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::

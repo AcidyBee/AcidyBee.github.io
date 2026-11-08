@@ -1,0 +1,67 @@
+---
+title: FAIR data and reproducible pipelines
+pagetitle: FAIR data and reproducible pipelines · Alexis Bourgeois
+description: Data shipped as documented packages, processing orchestrated with targets, version-controlled code.
+image: ../../assets/img/targets.jpg
+order: 8
+featured: false
+domain: tools
+domain-label: Tools & reproducibility
+period: 2016 →
+setting: Cross-cutting practice, all projects
+role: Author and maintainer
+key: ≈ 30
+key-sub: documented R packages, including 5 data packages
+tools:
+  - targets
+  - roxygen2
+  - pkgdown
+  - Git / Git LFS
+  - Quarto
+---
+
+## Context
+
+A result you cannot regenerate is a fragile result. I build every project so that a colleague can pick it up and rerun it.
+
+## Question
+
+How do you make data Findable, Accessible, Interoperable and Reusable in everyday work?
+
+## Data
+
+Example: mapuce.data.2020, built from the INSEE 2020 census detail file (8,690,731 rows, 17 columns), with its spatial layers.
+
+## Method
+
+- Data packages: every variable documented (roxygen2), pkgdown site, semantic versioning
+- targets pipeline: only the steps affected by a change are recomputed
+- cleanser package: automated, traceable checks and recoding; Git and Git LFS for large files
+
+## Results
+
+About 30 R packages built and maintained, including 5 data packages (health, INSEE, spatial, routing…), reused from one project to the next.
+
+## Figures {.figures}
+
+::: {.gallery}
+![targets pipeline dependency graph](../../assets/img/targets.jpg){.lightbox group="fair"}
+
+![Variable documentation (roxygen2)](../../assets/img/roxygen.jpg){.lightbox group="fair"}
+
+![pkgdown reference site](../../assets/img/pkgdown.jpg){.lightbox group="fair"}
+
+![One help page per dataset](../../assets/img/doc-help.jpg){.lightbox group="fair"}
+
+![Automatic recoding with cleanser](../../assets/img/cleanser.jpg){.lightbox group="fair"}
+
+![Git history: branches and merges](../../assets/img/git.jpg){.lightbox group="fair"}
+
+![Package library](../../assets/img/packages.jpg){.lightbox group="fair"}
+
+![Thematic packages](../../assets/img/packages-2.jpg){.lightbox group="fair"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

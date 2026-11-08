@@ -1,0 +1,65 @@
+---
+title: "SENSI-GASPI : comprendre le gaspillage alimentaire des ménages"
+pagetitle: "SENSI-GASPI : comprendre le gaspillage alimentaire des ménages · Alexis Bourgeois"
+description: "Enquête nationale auprès de 1 153 répondants : ACP, typologies de pratiques et cartographie, au service d'une recherche-action financée par l'ADEME."
+image: ../assets/img/sg-visuel.jpg
+order: 3
+featured: false
+domain: social
+domain-label: Sciences sociales
+period: 2018 – 2021
+setting: Recherche-action ADEME (APR TEES) · Université de Nîmes (CHROME), Environnons, CLCV
+role: "Data scientist : nettoyage, analyses statistiques, typologies, cartes"
+key: 4 profils
+key-sub: de gaspillage parmi 1 153 répondants, du plus économe (n = 573) au plus gaspilleur (n = 147)
+tools:
+  - R
+  - ACP
+  - CAH
+  - typologie
+  - cartographie
+publication:
+  label: synthèse publique du projet (CLCV)
+  url: https://www.clcv.org/storage/app/media/uploaded-files/Synth%C3%A8se%20communicante.pdf
+---
+
+## Contexte
+
+En France, les ménages sont le premier poste de pertes et gaspillage alimentaires (33 % du poids total, ADEME 2016). Le projet SENSI-GASPI (mai 2018 – février 2021) visait à accompagner des familles dans le changement de leurs pratiques, en s'appuyant sur la psychologie sociale et environnementale.
+
+## Question
+
+Quels profils de pratiques de gaspillage peut-on distinguer, et comment s'articulent-ils avec les pratiques alimentaires, les éco-gestes et les variables psychologiques (émotions, motivations, contrôle perçu) ?
+
+## Données
+
+Questionnaire en ligne, 1 153 répondants : 822 sans et 331 avec un message de déculpabilisation en introduction. Gaspillage déclaré pour six types d'aliments (échelle de 0 à 10), éco-gestes, pratiques alimentaires et une douzaine d'échelles psychologiques.
+
+## Méthode
+
+- Nettoyage et recodage, recherche des valeurs anormales et manquantes, imputations manuelles et automatiques
+- Corrélations entre types d'aliments, classification hiérarchique des variables, ACP : un score global de gaspillage (1re dimension, 48 % de l'information)
+- Typologie en 4 groupes pour chaque famille de pratiques, croisée avec toutes les autres variables du questionnaire
+- Comparaison des deux versions du questionnaire (effet du message) et cartographie de la provenance des répondants
+
+## Résultats
+
+Le gaspillage déclaré est faible, sauf pour les fruits et légumes frais (moyenne de 2,9 sur 10, contre 1 à 1,6 pour les autres aliments). C'est une pratique cohérente : qui gaspille un type d'aliment gaspille aussi les autres. Moins on gaspille, plus on adopte d'éco-gestes et de bonnes pratiques alimentaires. Le message de déculpabilisation déplace les réponses sur le gaspillage (de l'ordre de 15 % sur le score), signe d'un biais de désirabilité sociale. Limite assumée : un échantillon volontaire, plus diplômé et plus sensibilisé que la moyenne. Ces résultats ont orienté l'expérimentation menée ensuite auprès de 21 familles pendant 15 mois.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Synthèse du projet en facilitation graphique (Philine Bellenoue, SENSI-GASPI)](../assets/img/sg-visuel.jpg){.lightbox group="sensigaspi"}
+
+![Gaspillage déclaré par type d'aliment (échelle de 0 à 10)](../assets/img/sg-types.jpg){.lightbox group="sensigaspi"}
+
+![Classification hiérarchique des types d'aliments gaspillés](../assets/img/sg-dendro.jpg){.lightbox group="sensigaspi"}
+
+![Score de gaspillage selon les 4 groupes de la typologie](../assets/img/sg-typo.jpg){.lightbox group="sensigaspi"}
+
+![Provenance des répondants (fond de carte © OpenStreetMap)](../assets/img/sg-carte.jpg){.lightbox group="sensigaspi"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::

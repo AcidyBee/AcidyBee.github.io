@@ -1,0 +1,60 @@
+// ---- Base : typographie, liens, boutons, étiquettes ------------------
+$display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+$mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+$r: 14px;
+$hexagon: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+body { background: var(--bg); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--honey-ink); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+:focus-visible { outline: 2.5px solid var(--honey); outline-offset: 3px; border-radius: 6px; }
+
+h1, h2, h3 { font-family: $display; line-height: 1.12; text-wrap: balance; letter-spacing: -.01em; color: var(--ink); }
+h1, .title { font-size: clamp(2rem, 4.4vw, 3rem); font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); font-weight: 700; margin-top: 0; border-bottom: 0; padding-bottom: 0; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+
+.eyebrow { font-family: $mono; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--honey-ink); font-weight: 500; margin: 0; }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 62ch; font-weight: 400; }
+.muted { color: var(--muted); }
+.mono { font-family: $mono; }
+
+// Boutons : on surcharge .btn de Bootstrap avec nos propres variantes
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.btns > p { display: contents; }   // Pandoc enveloppe les liens dans un <p>
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font: 600 .95rem/1.3 "IBM Plex Sans", system-ui, sans-serif; text-decoration: none;
+  padding: 11px 18px; border-radius: 999px; border: 1.5px solid var(--ink); color: var(--ink);
+  background: transparent; transition: transform .15s ease, background .15s;
+  &:hover { transform: translateY(-1px); background: var(--slate-soft); color: var(--ink); border-color: var(--ink); }
+  svg { width: 18px; height: 18px; flex: none; }
+}
+.btn-honey { background: var(--honey); border-color: var(--honey); color: var(--on-honey);
+  &:hover { background: color-mix(in srgb, var(--honey) 85%, var(--ink)); border-color: transparent; color: var(--on-honey); }
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tags > p { display: contents; }
+.tag { font-family: $mono; font-size: .76rem; padding: 4px 10px; border-radius: 999px; background: var(--slate-soft); color: var(--slate); }
+
+// Quarto enveloppe chaque titre et son contenu dans une <section> :
+// à l'intérieur de nos blocs, on la rend « transparente » pour la grille.
+.sec-head > section, .band-text > section, .sec-title > section { display: contents; }
+.sec-head { display: grid; gap: 10px; margin-bottom: 28px;
+  > p { margin: 0; }
+  h2 { margin: 0; }
+}
+.sec-head-row { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; }
+
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: $r; padding: 18px; display: grid; gap: 10px;
+  > :last-child { margin-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+.box h3 { margin: 0; font-size: 1.05rem; }
+.box ul { margin: 0; padding-left: 1.1em; }
+.box .mono { font-size: .85rem; }

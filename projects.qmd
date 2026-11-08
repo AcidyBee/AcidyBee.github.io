@@ -1,0 +1,21 @@
+---
+title: "Études de cas"
+pagetitle: "Projets · Alexis Bourgeois"
+eyebrow: "Projets"
+description: "Chaque étude suit le même fil : contexte, question, données, méthode, résultats. Les figures sont celles des livrables réels."
+page-layout: full
+listing:
+  id: all-projects
+  contents: /projects/*.qmd
+  sort: order
+  template: _partials/project-card.ejs
+  template-params:
+    more: "Lire l’étude de cas →"
+---
+
+<!-- Les puces de filtre sont créées par assets/js/site.js -->
+::: {.filters data-filters="" data-all="Tous" data-order="health climate territory social tools" role="group"}
+:::
+
+::: {#all-projects}
+:::

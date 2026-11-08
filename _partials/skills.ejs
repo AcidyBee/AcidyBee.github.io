@@ -1,0 +1,19 @@
+<%
+/* Compétences par groupe. Données : data/skills.yml (un élément par groupe).
+   Chaque compétence : nom (texte, ou fr/en), précision facultative,
+   niveau 1 à 3, identifiant facultatif d'une étude de cas. */
+const P = templateParams, L = P.lang;
+const tr = v => (v && typeof v === "object") ? v[L] : v;
+const hexes = n => [1, 2, 3].map(i => '<i class="' + (i <= n ? "on" : "") + '"></i>').join("");
+%>
+<div class="skills">
+<% for (const g of items) { %><section class="sk">
+<h3 class="no-anchor"><%= tr(g.group) %></h3>
+<ul>
+<% for (const s of g.skills) { %><li>
+<div><%= tr(s.name) %><% if (s.note) { %><small><%= tr(s.note) %></small><% } %><% if (s.case) { %><small><a href="<%= P.casePath %><%= s.case %>.html"><%= P.seen %> : <%= P.cases[s.case] %></a></small><% } %></div>
+<span class="lvl" title="<%= P.levels[s.level - 1] %>"><%= hexes(s.level) %><span class="sr-only"><%= P.levels[s.level - 1] %></span></span>
+</li>
+<% } %></ul>
+</section>
+<% } %></div>

@@ -1,0 +1,66 @@
+# Chronologie du parcours, lue par about.qmd (du plus récent au plus ancien).
+
+- title: Biostatisticien et data scientist senior · CHU de Montpellier
+  period: 2020 – 2024
+  fr:
+    title: Biostatisticien et data scientist senior · CHU de Montpellier
+    text: Service de néphrologie-transplantation (avril 2020 – décembre 2024). Survie, mesures répétées, biomarqueurs, pipelines et packages R, formation des équipes, publications.
+  en:
+    title: Senior biostatistician & data scientist · Montpellier University Hospital
+    text: Nephrology and transplantation department (April 2020 – December 2024). Survival, repeated measures, biomarkers, R pipelines and packages, team training, publications.
+- title: Data scientist senior · Environnons
+  period: 2016 →
+  fr:
+    title: Data scientist senior · Environnons
+    text: "Associé minoritaire de ce bureau d'études en sciences sociales et data science (Montpellier) : les missions en statistique et data science passent par la structure. Enquêtes, packages R, applications Shiny (dont SpatialXploreR pour le CNRS), cartographie, réponses à appels d'offres, formation de partenaires."
+  en:
+    title: Senior data scientist · Environnons
+    text: Minority partner in this social science and data science consultancy (Montpellier); statistics and data science assignments are contracted through the company. Surveys, R packages, Shiny apps (including SpatialXploreR for the CNRS), mapping, tender responses, partner training.
+- title: '1er prix · Hackathon #CompteurConnect Greentech'
+  period: '2016'
+  fr:
+    title: '1er prix · Hackathon #CompteurConnect Greentech'
+    text: "Hackathon data science du Ministère de l'Environnement, récompensé par ErDF, GrDF et Ijenko, avec le projet Eclipse sur l'effacement de consommation électrique."
+  en:
+    title: '1st prize · #CompteurConnect Greentech Hackathon'
+    text: Data science hackathon of the French Ministry of the Environment, awarded by ErDF, GrDF and Ijenko, for Eclipse, a project on electricity demand response.
+- title: Chercheur associé · Data scientist · CNRS / LATTS (ANR MApUCE)
+  period: 2014 – 2016
+  fr:
+    title: Chercheur associé · Data scientist · CNRS / LATTS (ANR MApUCE)
+    text: "Contrat de chercheur à l'École des Ponts (Champs-sur-Marne). Modélisation des comportements énergétiques des ménages pour le modèle de climat urbain TEB, avec Météo-France, en R, RMarkdown et QGIS (et un peu de SAS). Trois articles et cinq communications en conférence avec les équipes du projet."
+  en:
+    title: Associate researcher · Data scientist · CNRS / LATTS (ANR MApUCE)
+    text: Fixed-term research contract at École des Ponts (Champs-sur-Marne). Modelling household energy behaviour for the TEB urban climate model, with Météo-France, using R, RMarkdown and QGIS (plus some SAS). Three articles and five conference papers with the project teams.
+- title: Formation continue en data science et statistique
+  period: 2012 →
+  fr:
+    title: Formation continue en data science et statistique
+    text: Stanford, Duke, Johns Hopkins, DataCamp, Udemy.
+  en:
+    title: Continuous training in data science and statistics
+    text: Stanford, Duke, Johns Hopkins, DataCamp, Udemy.
+- title: Ingénieur application et R&D · Sopralab (Semilab), Bois-Colombes
+  period: 2006 – 2012
+  fr:
+    title: Ingénieur application et R&D · Sopralab (Semilab), Bois-Colombes
+    text: "D'octobre 2006 à 2012. Ellipsométrie et porosimétrie en environnement industriel international : analyse de données avec les logiciels WinElli et WinElli II, développement de dispositifs d'adsorption, formation de clients."
+  en:
+    title: Application & R&D engineer · Sopralab (Semilab), Bois-Colombes
+    text: "October 2006 to 2012. Ellipsometry and porosimetry in an international industrial setting: data analysis with the WinElli and WinElli II software, development of adsorption set-ups, customer training."
+- title: Doctorat de physique · Université Pierre et Marie Curie (INSP)
+  period: 2001 – 2005
+  fr:
+    title: Doctorat de physique · Université Pierre et Marie Curie (INSP)
+    text: Sciences des matériaux, soutenue le 13 décembre 2005, mention très honorable. Auparavant, DEA de sciences des matériaux (grade de mastaire) en 2001.
+  en:
+    title: PhD in physics · Université Pierre et Marie Curie (INSP)
+    text: "Materials science, defended on 13 December 2005 with highest honours. Before that, a DEA in materials science (master's-level degree) in 2001."
+- title: Enseignant vacataire
+  period: 2001 – 2003
+  fr:
+    title: Enseignant vacataire
+    text: Enseignement en parallèle du doctorat.
+  en:
+    title: Part-time lecturer
+    text: Teaching alongside the PhD.

@@ -1,0 +1,54 @@
+---
+title: "Gêne aéroportuaire : six profils de riverains"
+pagetitle: "Gêne aéroportuaire : six profils de riverains · Alexis Bourgeois"
+description: "Conseil méthodologique : une stratégie de segmentation de 1 250 répondants, restituée en facilitation graphique."
+image: ../assets/img/sketch-1.jpg
+order: 7
+featured: false
+domain: social
+domain-label: Sciences sociales
+period: 2016 →
+setting: Projet CIGALE (ONERA / CNRS)
+role: "Conseil méthodologique : conception de la stratégie d'analyse et revue des résultats"
+key: 6 profils
+key-sub: issus de 1 250 répondants
+tools:
+  - ACP
+  - CAH
+  - k plus proches voisins
+  - facilitation graphique
+---
+
+## Contexte
+
+La gêne due au bruit des avions ne dépend pas seulement des décibels : elle dépend aussi du vécu, des attentes et des stratégies de chacun.
+
+## Question
+
+Peut-on identifier des groupes de riverains au ressenti homogène, pour adapter la communication et l'action ?
+
+## Données
+
+Questionnaire quantitatif, N = 1 250 répondants.
+
+## Méthode
+
+- Méthodologie proposée : analyse en composantes principales sur les variables quantitatives du questionnaire
+- Puis classification hiérarchique, consolidée si besoin par les k plus proches voisins
+- Construction d'un individu représentatif (parangon) par classe ; analyse réalisée par l'équipe, que j'ai revue
+
+## Résultats
+
+Six profils de ressenti (par exemple « Monsieur lassitude », « Monsieur satisfait »), illustrés en facilitation graphique pour être compris par tous les acteurs.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Parangon : « Monsieur lassitude »](../assets/img/sketch-1.jpg){.lightbox group="cigale"}
+
+![Parangon : « Monsieur satisfait »](../assets/img/sketch-2.jpg){.lightbox group="cigale"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::

@@ -1,0 +1,60 @@
+---
+title: Bringing household behaviour into an urban climate model
+pagetitle: Bringing household behaviour into an urban climate model · Alexis Bourgeois
+description: Machine learning on three national surveys, applied across France at census-tract level.
+image: ../../assets/img/teb.jpg
+order: 2
+featured: true
+domain: climate
+domain-label: Climate & energy
+period: 2014 – 2016
+setting: ANR MApUCE · CNRS / LATTS, with Météo-France
+role: "Data scientist: data fusion, models, mapping, papers"
+key: Whole of France
+key-sub: models applicable to every census tract
+tools:
+  - R
+  - machine learning
+  - validation croisée
+  - sf
+  - PostGIS
+publication:
+  label: 3 articles (Geoscientific Model Development 2017, Energy Research & Social Science 2017, La Météorologie 2019) and 5 conference papers
+  url: ../publications.html
+---
+
+## Context
+
+Urban heat islands also depend on how people live: heating, air conditioning, appliances. Météo-France's TEB urban climate model did not represent this diversity of behaviour.
+
+## Question
+
+Can household energy behaviour be predicted from variables available everywhere in France, so it can be fed into TEB?
+
+## Data
+
+Three surveys with different granularities and groupings (Energihab, INSEE housing data, National Housing Survey), harmonised through extensive feature engineering.
+
+## Method
+
+- Harmonising variables across surveys, selecting informative predictors
+- Machine learning models selected by 10-fold cross-validation
+- Applying the models at census-tract level and mapping them (Toulouse, Paris)
+
+## Results
+
+Models of thermal regulation, appliance ownership and usage intensity, applicable to all of mainland France at census-tract level and integrated into the TEB parameterisation (SURFEX v8.2). They were then turned into SpatialXploreR, a foresight app.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Methodology: from data to the urban climate model](../../assets/img/teb.jpg){.lightbox group="mapuce"}
+
+![Toulouse: energy regulation and usage intensity](../../assets/img/toulouse.jpg){.lightbox group="mapuce"}
+
+![Paris: spatial distribution of predictors](../../assets/img/paris.jpg){.lightbox group="mapuce"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

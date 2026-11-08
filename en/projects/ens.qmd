@@ -1,0 +1,67 @@
+---
+title: Management plans for protected natural areas
+pagetitle: Management plans for protected natural areas · Alexis Bourgeois
+description: "Crossing ecological stakes with users' perceptions to guide management."
+image: ../../assets/img/mugel.jpg
+order: 5
+featured: true
+domain: territory
+domain-label: Territories & environment
+period: 2016 →
+setting: Environnons, for nature-reserve managers (La Tartuguière, La Ciotat, Marseilleveyre)
+role: Interview analysis, mapping, visualisation
+key: 3 sites
+key-sub: perceptions and ecology on one map
+tools:
+  - R
+  - ggplot2
+  - sf
+  - Sankey
+  - QGIS
+---
+
+## Context
+
+A management plan must reconcile biodiversity, landscape and use. Stakeholders (managers, users, technicians) read the site differently.
+
+## Question
+
+Which areas and themes stand out for each group of stakeholders, and where do they overlap with ecological stakes?
+
+## Data
+
+Interviews coded by area mentioned and by theme; ecological and land-use layers (Parc du Mugel, Île Verte).
+
+## Method
+
+- Radar charts: importance of themes by stakeholder
+- Interactive Sankey diagram: areas mentioned and related themes
+- Mapping in R (ggplot2 + sf) and layer overlays in QGIS
+
+## Results
+
+Summary maps locating use conflicts, habitat degradation and landscape change, used as a basis for discussion with stakeholders.
+
+## Figures {.figures}
+
+::: {.gallery}
+![La Ciotat, Parc du Mugel: ecological stakes and uses](../../assets/img/mugel.jpg){.lightbox group="ens"}
+
+![La Ciotat, Île Verte: uses](../../assets/img/ileverte.jpg){.lightbox group="ens"}
+
+![Île Verte: close-up on use issues](../../assets/img/ileverte-enjeux.jpg){.lightbox group="ens"}
+
+![Importance of themes by stakeholder](../../assets/img/radar.jpg){.lightbox group="ens"}
+
+![Areas mentioned and related themes (Sankey)](../../assets/img/sankey.jpg){.lightbox group="ens"}
+
+![La Tartuguière: areas mentioned by stakeholder group](../../assets/img/tartuguiere.jpg){.lightbox group="ens"}
+
+![Areas mentioned: degradation, landscape change](../../assets/img/zones-degradation.jpg){.lightbox group="ens"}
+
+![Areas mentioned: use conflicts](../../assets/img/conflit.jpg){.lightbox group="ens"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

@@ -1,0 +1,13 @@
+<%
+/* Chronologie du parcours. Données : data/timeline.yml. */
+const L = templateParams.lang;
+%>
+<ol class="tl">
+<% for (const it of items) { %><li>
+<time><%= it.period %></time>
+<div>
+<h3 class="no-anchor"><%= it[L].title %></h3>
+<p><%= it[L].text %></p>
+</div>
+</li>
+<% } %></ol>

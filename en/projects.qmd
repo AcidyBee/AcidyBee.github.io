@@ -1,0 +1,21 @@
+---
+title: "Case studies"
+pagetitle: "Projects · Alexis Bourgeois"
+eyebrow: "Projects"
+description: "Each study follows the same thread: context, question, data, method, results. The figures come from the actual deliverables."
+page-layout: full
+listing:
+  id: all-projects
+  contents: projects/*.qmd
+  sort: order
+  template: ../_partials/project-card.ejs
+  template-params:
+    more: "Read the case study →"
+---
+
+<!-- Les puces de filtre sont créées par assets/js/site.js -->
+::: {.filters data-filters="" data-all="All" data-order="health climate territory social tools" role="group"}
+:::
+
+::: {#all-projects}
+:::

@@ -1,0 +1,210 @@
+# Publications (une entrée par référence), lues par publications.qmd.
+# kind : a = article, c = communication, p = poster, ch = chapitre d'ouvrage
+# group : biostat, climate, physics (libellés dans publications.qmd)
+
+- title: C5b-9 Glomerular Deposits Are Associated With Poor Renal Survival in Membranous Nephropathy
+  year: 2023
+  group: biostat
+  kind: a
+  authors: M. Teisseyre, A. Beyze, H. Perrochia, I. Szwarc, A. Bourgeois, C. Champion, L. Chenine, J-E. Serre, J. Broner, C. Aglae, V. Pernin, M. Le Quintrec
+  venue: Kidney International Reports, 8, 103–114
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.ekir.2022.10.008
+    - label: PubMed
+      url: https://pubmed.ncbi.nlm.nih.gov/36644365/
+- title: IgG3 donor-specific antibodies with a proinflammatory glycosylation profile may be associated with the risk of antibody-mediated rejection after kidney transplantation
+  year: 2022
+  group: biostat
+  kind: a
+  authors: V. Pernin, N. Bec, A. Beyze, A. Bourgeois, I. Szwarc, C. Champion, A. Chauvin, C. Rene, G. Mourad, P. Merville et al.
+  venue: American Journal of Transplantation, 22, 865–875
+  links:
+    - label: DOI
+      url: https://doi.org/10.1111/ajt.16904
+    - label: PubMed
+      url: https://pubmed.ncbi.nlm.nih.gov/34863025/
+- title: Caractérisation du tissu urbain français pour la modélisation du climat urbain et de son interaction avec la consommation énergétique dans les bâtiments
+  year: 2019
+  group: climate
+  kind: a
+  authors: R. Schoetter, V. Masson, A. Amossé, J. Bernard, E. Bocher, M. Bonhomme, A. Bourgeois, S. Faraut, T. Gardes, M. Goret et al.
+  venue: La Météorologie
+  links:
+    - label: DOI
+      url: https://doi.org/10.4267/2042/70169
+- title: Parametrisation of the variety of human behaviour related to building energy consumption in the Town Energy Balance (SURFEX-TEB v. 8.2)
+  year: 2017
+  group: climate
+  kind: a
+  authors: R. Schoetter, V. Masson, A. Bourgeois, M. Pellegrino, J-P. Lévy
+  venue: Geoscientific Model Development, 10, 2801–2831
+  links:
+    - label: DOI
+      url: https://doi.org/10.5194/gmd-10-2801-2017
+- title: "Modeling and mapping domestic energy behavior: Insights from a consumer survey in France"
+  year: 2017
+  group: climate
+  kind: a
+  authors: A. Bourgeois, M. Pellegrino, J-P. Lévy
+  venue: Energy Research & Social Science, 32, 180–192
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.erss.2017.06.021
+- title: "Urban Climate, Human behavior & Energy consumption: from LCZ mapping to simulation and urban planning (the MApUCE project)"
+  year: 2017
+  group: climate
+  kind: c
+  authors: V. Masson, J. Hidalgo, A. Amossé, E. Bocher, M. Bonhomme, A. Bourgeois, G. Bretagne et al.
+  links:
+    - label: HAL
+      url: https://hal.science/halshs-01528640
+- title: Evaluation of the simulated spatio-temporal variability of the anthropogenic heat flux in the agglomeration of Toulouse, France
+  year: 2017
+  group: climate
+  kind: c
+  authors: R. Schoetter, A. Amossé, E. Bocher, M. Bonhomme, A. Bourgeois, S. Faraut, J. Hidalgo, A. Lemonsu, J-P. Lévy, V. Masson et al.
+  links:
+    - label: HAL
+      url: https://hal.science/halshs-01528660
+- title: "Urban Climate, Human behavior and Energy consumption: from LCZ mapping to simulation and urban planning (the MapUCE project)"
+  year: 2016
+  group: climate
+  kind: p
+  authors: V. Masson, J. Hidalgo, A. Amossé, E. Bocher, M. Bonhomme, A. Bourgeois, G. Bretagne et al.
+  links:
+    - label: HAL
+      url: https://hal.science/hal-02157313
+- title: Evaluation of the simulated spatio-temporal variability of the anthropogenic heat flux in the agglomeration of Toulouse, France
+  year: 2016
+  group: climate
+  kind: c
+  authors: R. Schoetter, A. Amossé, E. Bocher, M. Bonhomme, A. Bourgeois, S. Faraut, J. Hidalgo, A. Lemonsu, J-P. Lévy, V. Masson et al.
+  links:
+    - label: HAL
+      url: https://hal.science/halshs-01528656
+- title: "Urban Climate, Human behavior & Energy consumption: from LCZ mapping to simulation and urban planning (the MapUCE project)"
+  year: 2015
+  group: climate
+  kind: c
+  authors: V. Masson, J. Hidalgo, A. Amossé, F. Belaid, E. Bocher, M. Bonhomme, A. Bourgeois, G. Bretagne et al.
+  links:
+    - label: HAL
+      url: https://hal.science/hal-01252761
+- title: "Ellipsometry porosimetry (EP): thin film porosimetry by coupling an adsorption setting with an optical measurement, highlights on diffusion results"
+  year: 2009
+  group: physics
+  kind: a
+  authors: A. Bourgeois, Y. Turcant, Ch. Walsh, Ch. Defranoux
+  venue: Applied Surface Science
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.apsusc.2009.06.131
+- title: "Ellipsometry porosimetry (EP): thin film porosimetry by coupling an adsorption setting with an optical measurement, highlights on additional adsorption results"
+  year: 2008
+  group: physics
+  kind: a
+  authors: A. Bourgeois, Y. Turcant, Ch. Walsh, Ch. Defranoux
+  venue: Adsorption, 14, 457
+  links:
+    - label: DOI
+      url: https://doi.org/10.1007/s10450-008-9138-5
+- title: Enhanced persistence of natural super-hydrophilicity in TiO2–SiO2 composite thin films deposited via a sol–gel route
+  year: 2008
+  group: physics
+  kind: a
+  authors: M. Houmard, D. Riassetto, F. Roussel, A. Bourgeois, G. Berthomé, J.C. Joud, M. Langlet
+  venue: Surface Science, 602, 3364
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.susc.2008.09.016
+- title: Morphology and natural wettability properties of sol–gel derived TiO2–SiO2 composite thin films
+  year: 2007
+  group: physics
+  kind: a
+  authors: M. Houmard, D. Riassetto, F. Roussel, A. Bourgeois, G. Berthomé, J.C. Joud, M. Langlet
+  venue: Applied Surface Science, 254, 1405
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.apsusc.2007.06.072
+- title: "Mesoporous 3D-hexagonal organosilicate films: post-synthesis grafting vs. direct synthesis"
+  year: 2006
+  group: physics
+  kind: a
+  authors: M. Matheron, A. Bourgeois, T. Gacoin, A. Brunet-Bruneau, P.-A. Albouy, J.-P. Boilot, J. Biteau, P. Lacan
+  venue: Thin Solid Films
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.tsf.2005.08.262
+- title: Highly ordered CTAB-templated organosilicate films
+  year: 2005
+  group: physics
+  kind: a
+  authors: M. Matheron, A. Bourgeois, A. Brunet-Bruneau, P.-A. Albouy, J. Biteau, T. Gacoin, J.-P. Boilot
+  venue: Journal of Materials Chemistry
+  links:
+    - label: DOI
+      url: https://doi.org/10.1039/b510554d
+- title: Adsorption and desorption isotherms at ambient temperature obtained by ellipsometric porosimetry to probe micropores in ordered mesoporous silica films
+  year: 2005
+  group: physics
+  kind: a
+  authors: A. Bourgeois, A. Brunet-Bruneau, S. Fisson, J. Rivory, M. Matheron, T. Gacoin, J.-P. Boilot
+  venue: Adsorption, 11, 195–199
+  links:
+    - label: DOI
+      url: https://doi.org/10.1007/s10450-005-5922-7
+- title: Ordered mesoporous organosilica films
+  year: 2005
+  group: physics
+  kind: ch
+  authors: M. Matheron, T. Gacoin, J.P. Boilot, A. Bourgeois, A. Brunet-Bruneau, J. Rivory, A. Jimenez, J. Biteau
+  venue: Studies in Surface Science and Catalysis, 156, 327–334
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/S0167-2991(05)80225-3
+- title: "An in situ study of mesostructured CTAB-silica film formation using infrared ellipsometry: evolution of water content"
+  year: 2004
+  group: physics
+  kind: a
+  authors: A. Brunet-Bruneau, A. Bourgeois, F. Cagnol, D. Grosso, C. Sanchez, J. Rivory
+  venue: Thin Solid Films, 455–456, 656
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.tsf.2003.11.220
+- title: Description of the porosity of inhomogeneous porous low-k films using solvent adsorption studied by spectroscopic ellipsometry in the visible range
+  year: 2004
+  group: physics
+  kind: a
+  authors: A. Bourgeois, A. Brunet-Bruneau, V. Jousseaume, N. Rochat, S. Fisson, B. Demarets, J. Rivory
+  venue: Thin Solid Films, 455–456, 366
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.tsf.2003.11.229
+- title: Fundamentals of mesostructuring through evaporation-induced self-assembly
+  year: 2004
+  group: physics
+  kind: a
+  authors: D. Grosso, F. Cagnol, G.J. de A.A. Soler-Illia, E.L. Crepaldi, H. Amenitsch, A. Brunet-Bruneau, A. Bourgeois, C. Sanchez
+  venue: Advanced Functional Materials, 14, 309
+  links:
+    - label: DOI
+      url: https://doi.org/10.1002/adfm.200305036
+- title: Determination of pore size distribution in thin organized mesoporous silica films by spectroscopic ellipsometry in the visible and infrared range
+  year: 2004
+  group: physics
+  kind: a
+  authors: A. Bourgeois, A. Brunet-Bruneau, S. Fisson, B. Demarets, D. Grosso, F. Cagnol, C. Sanchez, J. Rivory
+  venue: Thin Solid Films, 447–448, 46
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.tsf.2003.09.020
+- title: Highly porous TiO2 anatase optical thin films with cubic mesostructure stabilized at 700 °C
+  year: 2003
+  group: physics
+  kind: a
+  authors: D. Grosso, G.J. de A.A. Soler-Illia, E.L. Crepaldi, F. Cagnol, C. Sinturel, A. Bourgeois, A. Brunet-Bruneau, H. Amenitsch, P.A. Albouy, C. Sanchez
+  venue: Chemistry of Materials, 15, 4562
+  links:
+    - label: DOI
+      url: https://doi.org/10.1021/cm031060h

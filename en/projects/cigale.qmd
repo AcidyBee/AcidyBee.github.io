@@ -1,0 +1,54 @@
+---
+title: "Airport noise annoyance: six resident profiles"
+pagetitle: "Airport noise annoyance: six resident profiles · Alexis Bourgeois"
+description: "Methods consulting: a segmentation strategy for 1,250 respondents, presented through graphic facilitation."
+image: ../../assets/img/sketch-1.jpg
+order: 7
+featured: false
+domain: social
+domain-label: Social science
+period: 2016 →
+setting: CIGALE project (ONERA / CNRS)
+role: "Methods consulting: designed the analysis strategy and reviewed the results"
+key: 6 profiles
+key-sub: from 1,250 respondents
+tools:
+  - ACP
+  - CAH
+  - k plus proches voisins
+  - facilitation graphique
+---
+
+## Context
+
+Annoyance from aircraft noise is not only about decibels. It also depends on each person's experience, expectations and coping strategies.
+
+## Question
+
+Can we identify groups of residents with a similar experience, to tailor communication and action?
+
+## Data
+
+Quantitative questionnaire, N = 1,250 respondents.
+
+## Method
+
+- Proposed method: principal component analysis on the questionnaire's quantitative variables
+- Then hierarchical clustering, consolidated where needed with k-nearest neighbours
+- One representative individual (persona) per cluster; analysis carried out by the team and reviewed by me
+
+## Results
+
+Six profiles of experience (for example “Mr Weariness”, “Mr Satisfied”), illustrated through graphic facilitation so that every stakeholder can understand them.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Persona: “Mr Weariness”](../../assets/img/sketch-1.jpg){.lightbox group="cigale"}
+
+![Persona: “Mr Satisfied”](../../assets/img/sketch-2.jpg){.lightbox group="cigale"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

@@ -1,0 +1,64 @@
+---
+title: "Prognosis in membranous nephropathy: the role of C5b-9 deposits"
+pagetitle: "Prognosis in membranous nephropathy: the role of C5b-9 deposits · Alexis Bourgeois"
+description: "Published survival analysis: an adjusted hazard ratio of 3.5 for C5b-9+ patients, reported with its uncertainty."
+image: ../../assets/img/km.jpg
+order: 1
+featured: true
+domain: health
+domain-label: Health
+period: 2020 – 2023
+setting: Montpellier University Hospital, nephrology
+role: "Biostatistician: analysis plan, models, figures, Methods"
+key: HR = 3.54 [1.14, 11.0]
+key-sub: C5b-9+, Cox model adjusted for GFR. Wide 95% CI, to be confirmed in an external cohort
+tools:
+  - R
+  - survival
+  - Cox
+  - nomogramme
+  - ggplot2
+publication:
+  label: "Kidney International Reports, 2023 ; 8 : 103–114"
+  url: https://pubmed.ncbi.nlm.nih.gov/36644365/
+---
+
+## Context
+
+Membranous nephropathy progresses very differently from one patient to another. Nephrologists were looking for a simple histological marker to spot high-risk cases early.
+
+## Question
+
+Does the presence of glomerular C5b-9 deposits at biopsy predict renal function decline?
+
+## Data
+
+Cohort of 64 biopsied patients (35 C5b-9−, 29 C5b-9+), followed up to 150 months: histology, GFR, clinical follow-up.
+
+## Method
+
+- Kaplan-Meier curves and log-rank test
+- Multivariable Cox model (C5b-9, GFR), checking the proportional-hazards assumption
+- Predictions by GFR quartile and a nomogram for clinical use
+
+## Results
+
+Renal survival is markedly poorer in C5b-9+ patients. At equal GFR, the hazard of renal decline is about 3.5 times higher (HR 3.54; 95% CI 1.14 to 11.0). The interval is wide, reflecting the sample size (64 patients), and calls for validation in an external cohort. C5b-9 deposits also go together with higher C4d intensity.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Renal survival by C5b-9 deposits (Kaplan-Meier)](../../assets/img/km.jpg){.lightbox group="c5b9"}
+
+![Cox model predictions by C5b-9 and GFR quartile](../../assets/img/cox.jpg){.lightbox group="c5b9"}
+
+![Hazard ratios from the multivariable model](../../assets/img/forest.jpg){.lightbox group="c5b9"}
+
+![Nomogram: turning the model into a clinical tool](../../assets/img/nomogram.jpg){.lightbox group="c5b9"}
+
+![C4d intensity by C5b-9 status](../../assets/img/c4d.jpg){.lightbox group="c5b9"}
+:::
+
+::: {.case-cta}
+[A similar project? Let's talk](../contact.qmd){.btn .btn-honey}
+:::

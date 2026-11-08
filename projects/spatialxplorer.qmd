@@ -1,0 +1,58 @@
+---
+title: "SpatialXploreR : explorer et simuler à l'échelle de l'IRIS"
+pagetitle: "SpatialXploreR : explorer et simuler à l'échelle de l'IRIS · Alexis Bourgeois"
+description: "Application web Shiny/Leaflet qui transforme les modèles du projet MApUCE en outil de prospective, à l'échelle de l'IRIS."
+image: ../assets/img/sx-france.jpg
+order: 4
+featured: false
+domain: tools
+domain-label: Outils & reproductibilité
+period: 2018, refonte en 2025
+setting: Environnons, pour le CNRS (suite du projet MApUCE)
+role: "Conception et développement de l'application"
+key: "> 50 000"
+key-sub: polygones explorables sans latence
+tools:
+  - Shiny
+  - Leaflet
+  - golem
+  - sf
+---
+
+## Contexte
+
+Une fois le projet MApUCE terminé, ses modèles de comportements énergétiques devaient servir au-delà des articles : explorer des territoires et simuler leur évolution. J'ai développé l'application au sein d'Environnons, pour le CNRS.
+
+## Question
+
+Comment utiliser des modèles statistiques pour simuler des scénarios d'évolution, à l'échelle fine et sans latence, par des non-spécialistes ?
+
+## Données
+
+Plus de 50 000 polygones IRIS pour la France métropolitaine, couplés aux sorties des modèles.
+
+## Méthode
+
+- Sélection hiérarchique de la zone (région, département, commune, IRIS) pour limiter le calcul et l'affichage
+- Application modulaire packagée (golem) : chaque onglet est un module testable
+- Mode prospectif : modifier des variables et voir l'effet sur la carte
+
+## Résultats
+
+Une application qui permet de choisir une zone, d'appliquer les modèles, d'agréger les résultats et de simuler des évolutions en quelques clics : par exemple le vieillissement de la population, ou un changement de mode de chauffage ou de combustible.
+
+## Figures {.figures}
+
+::: {.gallery}
+![Carte interactive France entière](../assets/img/sx-france.jpg){.lightbox group="spatialxplorer"}
+
+![Sélection hiérarchique de la zone d'étude](../assets/img/sx-zone.jpg){.lightbox group="spatialxplorer"}
+
+![Exploration et agrégation des résultats](../assets/img/sx-agreg.jpg){.lightbox group="spatialxplorer"}
+
+![Structure modulaire du package](../assets/img/sx-pkg.jpg){.lightbox group="spatialxplorer"}
+:::
+
+::: {.case-cta}
+[Un projet similaire ? Parlons-en](../contact.qmd){.btn .btn-honey}
+:::
